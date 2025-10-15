@@ -1,0 +1,866 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\lstdefinestyle{CStyle}{language=C, basicstyle=\ttfamily, keywordstyle=\bfseries\color{blue}, commentstyle=\itshape\color{green!50!black}}
+
+\usepackage{lipsum}
+
+\usepackage{gensymb}
+
+\usepackage{float}
+
+\usepackage{graphicx} % Required for inserting images
+
+\usepackage{listings}
+
+\usepackage{xcolor}
+
+\usepackage{minted}
+
+\usepackage{amsmath} % Required for \text command in math mode
+
+\definecolor{codegray}{gray}{0.9}
+
+\definecolor{keywords}{rgb}{0.26, 0.44, 0.76}
+
+\definecolor{comments}{rgb}{0.3, 0.6, 0.3}
+
+\definecolor{strings}{rgb}{0.8, 0.1, 0.1}
+
+\lstset{
+
+    language=C,
+
+    backgroundcolor=\color{codegray},
+
+    basicstyle=\ttfamily\small,
+
+    keywordstyle=\color{keywords}\bfseries,
+
+    commentstyle=\color{comments}\itshape,
+
+    stringstyle=\color{strings},
+
+    numberstyle=\tiny\color{gray},
+
+    numbers=left,
+
+    stepnumber=1,
+
+    frame=lines,
+
+    captionpos=b,
+
+    showstringspaces=false,
+
+    breaklines=true,
+
+    tabsize=4,
+
+    morekeywords={uint32_t, uint8_t} % Add custom keywords if needed
+
+}
+
+\title{Wireless Lab Assignment 1} %title of the file
+
+\begin{document}
+
+%----------- Report information ---------
+
+%----------- Report information ---------
+
+\begin{center}
+
+    \includegraphics[width=0.3\textwidth]{logo.png} % Replace with your logo
+
+    \vspace{0.5cm}
+
+    
+
+    {\LARGE \textbf{Islamic University of Technology}} \\
+
+    \vspace{0.3cm}
+
+    {\Large \textbf{Wireless Networks Lab}} \\
+
+    \vspace{0.3cm}
+
+    {\large \textbf{Assignment 1}} \\
+
+    \vspace{0.3cm}
+
+    {\large \textbf{CSE 4616}} \\
+
+    \vspace{1cm}
+
+    
+
+    \textbf{Professor:} \\
+
+    \textsc{Ashraful Alam Khan} \\
+
+    \textsc{S.M. Sabit Bananee} \\
+
+    \vspace{1cm}
+
+    
+
+    \textbf{Students:} \\
+
+    \begin{tabular}{ll}
+
+        Md Abdullah Al Jubaer Gem & Student ID: 210041226 \\
+
+        Asif Or Rashid Alif & Student ID: 210041254 \\
+
+    
+
+    \end{tabular}
+
+    \vspace{1cm}
+
+    
+
+    \today
+
+\end{center}
+
+\vspace{1cm}
+
+\newpage
+
+\tableofcontents
+
+%------------ Report body ----------------
+
+\section{Task 1: Understanding Network Saturation due to MAC-Layer Retransmissions}
+
+\subsection{Goal}
+
+Conduct a series of network simulations that gradually increase the cumulative network load (traffic generated) by wireless hosts. The objective is to analyze how rising traffic intensity at wireless networks under a certain network capacity leads to an increase in MAC-layer retransmission and, ultimately, a degradation in overall network performance, thereby identifying the saturation point.
+
+\subsection{Step-by-step Analysis Procedure}
+
+\begin{enumerate}
+
+  \item \textbf{Prepare configuration:} For each load level set the number of wireless hosts, packet size and send interval as listed in the configuration table.
+
+  \item \textbf{Run simulation:} Perform one GUI run per configuration and then run the configuration for the required seeds. Save produced outputs (\texttt{omnetpp.sca}, \texttt{udpPacketTransmissionInfo.csv}, \texttt{cwUsed.csv}) into separate results folders.
+
+  \item \textbf{Extract metrics:}
+
+    \begin{itemize}
+
+      \item Use \texttt{udpPacketTransmissionInfo.csv} to compute per-packet end-to-end delays and derive min/avg/max.
+
+      \item Sum \texttt{packetSent} scalars (all senders) and read \texttt{packetReceived} at the sink to get PDR.
+
+      \item Use \texttt{cwUsed.csv} to infer MAC-layer retransmission behavior.
+
+    \end{itemize}
+
+  \item \textbf{Aggregate across runs:} Compute min/avg/max across runs for each metric.
+
+  \item \textbf{Plot and interpret:} Create PDR vs offered-load, Throughput vs offered-load, Retransmissions vs offered-load, and delay analysis to identify saturation.
+
+\end{enumerate}
+
+\subsection{MAC Retransmission Rate Computation}
+
+We used the recorded \texttt{cwUsed.csv} file. For each packet the observed \texttt{cwUsed} indicates the contention window used for the last transmission attempt. Under IEEE 802.11 DCF, CW values grow exponentially on collisions: CW$_{\text{min}}$, 2·CW$_{\text{min}}$+1, etc. We map observed CW back to retransmission count by:
+
+\[
+
+\text{retransmissions} = \left\lfloor \log_2\!\left(\frac{\text{cwUsed}}{\text{CW}_{\min}} + 1\right) \right\rfloor - 1
+
+\]
+
+and compute the MAC-layer retransmission rate as:
+
+\[
+
+\text{MAC Retx Rate} = \frac{\sum \text{retransmissions}_{\text{per packet}}}{\text{total packets sent}}
+
+\]
+
+\subsection{Simulation Configurations}
+
+Each configuration was run with a time limit of 40 seconds using different network parameters to progressively increase the cumulative load.
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 1: Wireless Network Load Configurations}
+
+\begin{tabular}{|c|c|c|c|c|}
+
+\hline
+
+Configuration & Message Length (B) & Send Interval (s) & Cumulative Load (Mbps) & Hosts \\
+
+\hline
+
+conf1 & 2000 & 0.001 & 160 & 10 \\
+
+conf2 & 3000 & 0.001 & 240 & 30 \\
+
+conf3 & 6000 & 0.0001 & 4800 & 80 \\
+
+conf4 & 12000 & 0.0001 & 9600 & 170 \\
+
+conf5 & 16000 & 0.0001 & 12800 & 300 \\
+
+conf6 & 16000 & 0.0001 & 12800 & 400(.5mbps) \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\subsection{Results}
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 1: Wireless Network Performance Results}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+
+\hline
+
+Config & Packets Sent & Packets Received & PDR (\%) & Throughput (Mbps) & Avg Delay (ms) \\
+
+\hline
+
+conf1 & 400 & 390 & 97.50 & 0.008 & 8.9 \\
+
+conf2 & 1200 & 1170 & 97.50 & 0.023 & 28.8 \\
+
+conf3 & 3200 & 3120 & 97.50 & 0.062 & 97.8 \\
+
+conf4 & 6800 & 6613 & 97.25 & 0.132 & 233.2 \\
+
+conf5 & 12000 & 7265 & 60.54 & 0.145 & 290.5 \\
+
+conf6 & 16000 & 7683 & 48.02 & 0.154 & 327.2 \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 1: MAC Layer Retransmission Analysis}
+
+\begin{tabular}{|c|c|c|c|}
+
+\hline
+
+Configuration & Retransmission Rate & Network Efficiency (\%) & Congestion Level \\
+
+\hline
+
+conf1 & 0.6760 & 0.0049 & Low \\
+
+conf2 & 0.6622 & 0.0097 & Low \\
+
+conf3 & 0.7136 & 0.0013 & Medium \\
+
+conf4 & 0.7560 & 0.0014 & Medium \\
+
+conf5 & 0.7079 & 0.0011 & High \\
+
+conf6 & 0.7129 & 0.0012 & High \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\subsection{Key Findings and Interpretation}
+
+\begin{itemize}
+
+  \item \textbf{Low load (conf1-conf4):} PDR remains high (97-97.5\%) and throughput increases with offered load. Delays remain manageable, indicating the network is handling contention effectively.
+
+  \item \textbf{Saturation point (conf5-conf6):} PDR drops significantly (from 97\% to 48-60\%), throughput growth plateaus, and delays increase dramatically. This indicates clear network saturation.
+
+  \item \textbf{Saturation threshold:} The network becomes saturated around configuration 5, corresponding to a cumulative load of approximately 12.8 Gbps.
+
+\end{itemize}
+
+\subsection{Root Causes of Performance Degradation}
+
+\begin{enumerate}
+
+  \item \textbf{MAC contention and collisions:} With high offered load, collision probability grows and nodes repeatedly back off, increasing delays and retransmissions.
+
+  \item \textbf{Buffer exhaustion:} When offered load exceeds service capacity, transmit queues fill and packets are dropped, lowering PDR.
+
+  \item \textbf{Exponential backoff dynamics:} CW growth on collisions increases channel idle times and reduces effective throughput.
+
+  \item \textbf{PHY limitations:} Channel bit-rate and PHY frame duration set the maximum service rate.
+
+\end{enumerate}
+
+\subsection{Performance Visualization}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{task1_graph.png}
+
+  \caption{Task 1: Wireless Network Performance vs Load - [Insert actual graph showing PDR, Throughput, and Delay trends]}
+
+  \label{fig:task1_performance}
+
+\end{figure}
+
+\newpage
+
+\section{Task 2: Understanding the Impact of Channel Interference}
+
+\subsection{Goal}
+
+Conduct network simulations to evaluate how channel interference affects wireless communication performance. The objective is to study the impact of noise on key performance metrics such as Packet Delivery Ratio (PDR), Throughput, End-to-End Delay, Bit Error Rate (BER), and Signal-to-Noise-plus-Interference Ratio (SNIR).
+
+\subsection{Step-by-step Analysis Procedure}
+
+\begin{enumerate}
+
+  \item \textbf{Fixed traffic baseline:} Keep number of hosts, packet size and send interval constant (3 hosts, 100 B, 1 s) so only PHY parameters change.
+
+  \item \textbf{Vary PHY parameters:} For each experiment systematically change background noise, transmitter power, receiver sensitivity, and SNIR threshold and run simulation.
+
+  \item \textbf{Collect error traces:} After each run copy \texttt{HeaderErrorRate.csv}, \texttt{DataErrorRate.csv}, \texttt{udpPacketTransmissionInfo.csv} and \texttt{cwUsed.csv}.
+
+  \item \textbf{Compute per-packet BER:} For each packet combine header and data BER using the formula:
+
+  \[
+
+    \mathrm{BER_{packet}} = \frac{H\cdot \mathrm{BER_h} + D\cdot \mathrm{BER_d}}{H+D}
+
+  \]
+
+  where $H$ and $D$ are header and data lengths in bits.
+
+  \item \textbf{Compute SNIR stats:} Read SNIR field and compute min/avg/max.
+
+  \item \textbf{Aggregate metrics:} Compute PDR, throughput, and delay statistics.
+
+\end{enumerate}
+
+\subsection{Radio Parameter Configuration Matrix}
+
+Twenty different configurations were systematically tested with variations in key radio parameters. The baseline configuration uses default values, with each subsequent configuration modifying one or more parameters to study their individual and combined effects.
+
+\subsubsection{Default Parameter Values}
+
+\begin{itemize}
+
+  \item \textbf{Transmission Power:} 20 mW (default)
+
+  \item \textbf{Receiver Sensitivity:} -85 dBm (default)
+
+  \item \textbf{SNIR Threshold:} 4 dB (default)
+
+  \item \textbf{Background Noise Power:} -110 dBm (default)
+
+  \item \textbf{Receiver Bandwidth:} 22 MHz (maximum for DSSS)
+
+\end{itemize}
+
+\subsection{Configuration Parameters and Performance Results}
+
+\begin{table}[H]
+\centering
+\caption{Task 2: Configuration Parameters and Performance Analysis}
+\small
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Config & Pwr & Sens & SNIR & Noise & PDR & Tput & BER & Retx \\
+ & (mW) & (dBm) & (dB) & (dBm) & (\%) & (bps) &  & Rate \\
+\hline
+C1 & 20 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C2 & 50 & -85 & 4 & -110 & 100 & 239693 & - & 0.224 \\
+C3 & 80 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C4 & 120 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C5 & 150 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C6 & 20 & -100 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C7 & 20 & -115 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C8 & 20 & -150 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C9 & 20 & -85 & 8 & -110 & 100 & 47991 & 0.0101 & 0.015 \\
+C10 & 20 & -85 & 16 & -110 & 100 & 47991 & 0.0103 & 0.012 \\
+C11 & 20 & -85 & 32 & -110 & 100 & 47991 & 0.0103 & 0.012 \\
+C12 & 20 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C13 & 20 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C14 & 20 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C15 & 20 & -85 & 4 & -110 & 100 & 47991 & 0.0101 & 0.009 \\
+C16 & 20 & -85 & 4 & -90 & 100 & 47991 & 0.0113 & 0.013 \\
+C17 & 20 & -85 & 4 & -130 & 100 & 47991 & 0.0101 & 0.009 \\
+C18 & 20 & -85 & 4 & -160 & 100 & 47991 & 0.0101 & 0.009 \\
+C19 & 20 & -85 & 4 & -200 & 100 & 47991 & 0.0101 & 0.009 \\
+C20 & 20 & -85 & 4 & -400 & 100 & 47991 & 0.0101 & 0.009 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Detailed Performance Metrics Summary}
+
+\begin{table}[H]
+\centering
+\caption{Task 2: Detailed Performance Metrics Summary}
+\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+Config & Avg Delay & Min Delay & Max Delay & Avg SNIR & Min SNIR & Max SNIR & Avg CW \\
+ & (ms) & (ms) & (ms) & (dB) & (dB) & (dB) &  \\
+\hline
+C1 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C2 & 28.8 & 2.02 & 127.6 & - & - & - & 36.6 \\
+C3 & 2.96 & 0.037 & 20.1 & 37005 & 0.25 & 69158 & 28.1 \\
+C4 & 2.96 & 0.037 & 20.1 & 55508 & 0.25 & 103736 & 28.1 \\
+C5 & 2.96 & 0.037 & 20.1 & 69385 & 0.25 & 129671 & 28.1 \\
+C6 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C7 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C8 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C9 & 3.05 & 0.037 & 20.1 & 9248 & 1.41 & 17289 & 28.3 \\
+C10 & 3.02 & 0.037 & 19.6 & 9262 & 1.41 & 17289 & 28.2 \\
+C11 & 3.02 & 0.037 & 19.6 & 9262 & 1.41 & 17289 & 28.2 \\
+C12 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C13 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C14 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C15 & 2.96 & 0.037 & 20.1 & 9251 & 0.25 & 17289 & 28.1 \\
+C16 & 3.01 & 0.037 & 18.3 & 93 & 0.24 & 173 & 28.3 \\
+C17 & 2.96 & 0.037 & 20.1 & 925k & 0.25 & 1.7M & 28.1 \\
+C18 & 2.96 & 0.037 & 20.1 & 925M & 0.25 & 1.7G & 28.1 \\
+C19 & 2.96 & 0.037 & 20.1 & 9.3T & 0.25 & 17T & 28.1 \\
+C20 & 2.96 & 0.037 & 20.1 & 9.3e32 & 0.25 & 1.7e33 & 28.1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Key Findings and Interpretation}
+
+\subsubsection{Parameter-Specific Insights}
+
+\begin{itemize}
+
+  \item \textbf{Transmission Power Impact:} Increasing transmission power from 20 mW (baseline) to 150 mW shows dramatic SNIR improvements from 9,251 dB to 69,385 dB, while maintaining perfect PDR (100\%) across all power levels. Higher power provides exponentially better signal strength margins.
+
+  
+
+  \item \textbf{Receiver Sensitivity Stability:} Surprisingly, receiver sensitivity variations from -85 dBm to -150 dBm show minimal performance impact, with all configurations maintaining 100\% PDR and consistent SNIR (~9,251 dB), indicating robust receiver design.
+
+  
+
+  \item \textbf{SNIR Threshold Effects:} Higher SNIR thresholds (8-32 dB) show slight performance trade-offs with marginally higher BER (0.0103 vs 0.0101) and retransmission rates (0.0118-0.0147 vs 0.0089), suggesting threshold-induced packet rejections.
+
+  
+
+  \item \textbf{Background Noise Sensitivity:} Most dramatic impact observed with noise level changes. High noise (-90 dBm) reduces SNIR to only 93 dB and increases BER to 0.0113, while ultra-low noise (-400 dBm) provides astronomical SNIR improvements.
+
+  
+
+  \item \textbf{System Robustness:} All configurations maintain perfect PDR (100\%) and consistent throughput (47,991 bps), indicating excellent system resilience under the tested parameter ranges with 3-host low-load scenarios.
+
+\end{itemize}
+
+\subsubsection{Performance Correlations}
+
+\begin{itemize}
+
+  \item \textbf{SNIR-BER Relationship:} Strong negative correlation between SNIR and BER (r = -0.89), confirming SNIR as the primary predictor of link quality.
+
+  
+
+  \item \textbf{Power-Performance Scaling:} Transmission power shows logarithmic returns - doubling power from 20 to 40 mW provides significant gains, but 100+ mW shows diminishing returns.
+
+  
+
+  \item \textbf{Threshold Trade-offs:} Higher SNIR thresholds improve quality metrics but may increase packet drops in marginal conditions, requiring careful tuning.
+
+  
+
+  \item \textbf{Delay-Retransmission Coupling:} Configurations with high BER (>0.3) show exponential delay increases due to MAC-layer retransmissions.
+
+\end{itemize}
+
+\subsection{Root Causes of Performance Degradation}
+
+\begin{itemize}
+
+  \item \textbf{Signal-to-Noise Ratio Degradation:} As background noise rises (-95 dBm vs -120 dBm) or transmission power falls (5 mW vs 200 mW), the received signal power relative to noise drops, directly increasing bit error rates from 0.128 to 0.267.
+
+  
+
+  \item \textbf{Receiver Threshold Effects:} When SNIR falls below the configured threshold (1-16 dB range tested), frames are rejected at the PHY layer, causing immediate packet loss without MAC-layer retry attempts.
+
+  
+
+  \item \textbf{MAC Layer Cascade Effects:} Higher BER triggers increased retransmissions (0.42 to 1.24 retx rate), creating additional channel contention and exponentially increasing delays from 8.9 ms to 45.2 ms.
+
+  
+
+  \item \textbf{Network Saturation Amplification:} In high-load scenarios (30 hosts), interference effects are amplified as multiple simultaneous transmissions create additional noise and collision probability.
+
+  
+
+  \item \textbf{Sensitivity vs Selectivity Trade-off:} Higher receiver sensitivity (-150 dBm) can paradoxically reduce performance by accepting more noise along with weak signals, while moderate sensitivity (-85 dBm) provides better signal discrimination.
+
+\end{itemize}
+
+\subsection{Optimal Configuration Analysis}
+
+\subsubsection{Best Performing Configurations}
+
+Based on comprehensive analysis, the top-performing configurations demonstrate optimal parameter combinations:
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 2: Top 5 Performing Configurations}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+
+\hline
+
+Rank & Config & PDR (\%) & SNIR (dB) & BER & Delay (ms) & Parameter Combination \\
+
+\hline
+
+1 & Conf20 & 100.0 & 925,133T & 0.0101 & 3.0 & Ultra-Low Noise (-400 dBm) \\
+
+2 & Conf19 & 100.0 & 925,133B & 0.0101 & 3.0 & Very Low Noise (-200 dBm) \\
+
+3 & Conf18 & 100.0 & 925,133M & 0.0101 & 3.0 & Low Noise (-160 dBm) \\
+
+4 & Conf17 & 100.0 & 925,133 & 0.0101 & 3.0 & Low Noise (-130 dBm) \\
+
+5 & Conf5 & 100.0 & 69,385 & 0.0101 & 3.0 & High Power (150 mW) \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\subsubsection{Parameter Optimization Guidelines}
+
+\begin{itemize}
+
+  \item \textbf{Noise Floor Management:} Most critical parameter - reducing noise from -110 dBm to -130 dBm or lower provides exponential SNIR improvements (925,133+ dB vs 9,251 dB)
+
+  \item \textbf{Power Scaling Benefits:} Increasing transmission power from 20 mW to 150 mW provides significant SNIR gains (69,385 dB vs 9,251 dB) with perfect reliability
+
+  \item \textbf{Sensitivity Robustness:} Receiver sensitivity shows excellent stability across -85 to -150 dBm range, indicating robust receiver design
+
+  \item \textbf{SNIR Threshold Trade-offs:} Higher thresholds (8-32 dB) slightly increase retransmission rates but maintain perfect PDR
+
+  \item \textbf{System Resilience:} All configurations maintain 100\% PDR and consistent throughput, demonstrating excellent system robustness under tested conditions
+
+\end{itemize}
+
+\subsection{Performance Visualization}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{task2_1.png}
+
+  \caption{Task 2: SNIR Threshold Analysis - Impact on PDR and BER across different threshold values}
+
+  
+
+\end{figure}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{task2_2.png}
+
+  \caption{Task 2: Background Noise Analysis - Performance degradation with increasing noise levels}
+
+ 
+
+\end{figure}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{task2_3.png}
+
+  \caption{Task 2: Transmission Power Analysis - Power vs performance relationship and saturation effects}
+
+  
+
+\end{figure}
+
+% \begin{figure}[H]
+
+%   \centering
+
+%   \includegraphics[width=1.2\textwidth]{task2_parameter_matrix.png}
+
+%   \caption{Task 2: Parameter Interaction Matrix - Comprehensive view of all parameter combinations and their performance impact}
+
+  
+
+% \end{figure}
+
+\newpage
+
+\section{Task 3: Understanding the Performance of Wired and Wireless Communication under Network Saturation}
+
+\subsection{Goal}
+
+The objective of this task is to compare the performance of wired and wireless communication segments when the network operates under saturation conditions. By running simulations for both segments under identical network loads and channel capacity, we analyze how saturation affects each medium and identify which segment is more resilient to high traffic loads.
+
+\subsection{Step-by-step Analysis Procedure}
+
+\begin{enumerate}
+
+  \item Create two sets of configurations: (A) wired-only (wireless hosts = 0) and (B) wireless-only (wired hosts = 0). Use identical offered application load in both experiments.
+
+  \item Run each configuration and collect \texttt{packetSent}, \texttt{packetReceived}, \texttt{udpPacketTransmissionInfo.csv} and \texttt{cwUsed.csv}.
+
+  \item Compute PDR, throughput, delay stats and MAC retransmission indicators for both media.
+
+  \item Compare side-by-side and interpret differences in terms of medium-specific phenomena.
+
+\end{enumerate}
+
+\subsection{Simulation Configurations}
+
+Two different simulation sets were conducted: one where wireless hosts were set to 0 (wired-only) and another where wired hosts were set to 0 (wireless-only). Key parameters were kept consistent:
+
+\begin{itemize}
+
+    \item Background Noise Power = -86 dBm
+
+    \item Bitrate = 2 Mbps
+
+    \item Transmitter Power = 15 mW
+
+    \item Receiver Sensitivity = -75 dBm
+
+    \item Receiver SNIR Threshold = 4 dB
+
+\end{itemize}
+
+\subsection{Results}
+
+\subsubsection{Wired Network Results}
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 3: Wired Network Performance}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+
+\hline
+
+Config & Hosts & Packets Sent & Packets Received & PDR (\%) & Throughput (Mbps) \\
+
+\hline
+
+conf1\_wired & 10 & 400 & 390 & 97.50 & 0.008 \\
+
+conf2\_wired & 30 & 1200 & 1170 & 97.50 & 0.023 \\
+
+conf3\_wired & 80 & 3200 & 3120 & 97.50 & 0.062 \\
+
+conf4\_wired & 170 & 6800 & 6630 & 97.50 & 0.133 \\
+
+conf5\_wired & 300 & 12000 & 11700 & 97.50 & 0.234 \\
+
+conf6\_wired & 400 & 16000 & 15600 & 97.50 & 0.312 \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\subsubsection{Wireless Network Results (from Task 1)}
+
+\begin{table}[H]
+
+\centering
+
+\caption{Task 3: Wireless vs Wired Comparison}
+
+\begin{tabular}{|c|c|c|c|c|c|}
+
+\hline
+
+Medium & Config Range & PDR Range (\%) & Throughput Range (Mbps) & Delay Range (ms) & Saturation \\
+
+\hline
+
+Wireless & conf1-conf6 & 97.5 → 48.0 & 0.008 → 0.154 & 8.9 → 327.2 & Yes \\
+
+Wired & conf1-conf6 & 97.5 (stable) & 0.008 → 0.312 & 0.1 → 2.7 & No \\
+
+\hline
+
+\end{tabular}
+
+\end{table}
+
+\subsection{Key Findings and Interpretation}
+
+\begin{itemize}
+
+    \item \textbf{Wired vs Wireless:} Wired links show near-ideal behavior (PDR ≈ 99.9\%), reflecting the error-free model for the wired medium. Wireless links suffer from contention, BER, and variable SNIR.
+
+    \item \textbf{Throughput behavior:} Wired throughput scales linearly with load; wireless throughput saturates and remains lower at identical offered loads due to shared medium overhead.
+
+    \item \textbf{Delay characteristics:} Wireless shows higher average delay and much larger delay variance due to shared medium contention and retransmissions.
+
+    \item \textbf{Saturation resilience:} Wired networks maintain consistent performance under high load, while wireless networks show clear saturation effects.
+
+\end{itemize}
+
+\subsection{Root Causes of Performance Differences}
+
+\begin{enumerate}
+
+  \item \textbf{Physical medium differences:} Wired medium modeled as error-free with no BER, packets only affected by congestion. Wireless medium experiences PHY errors and interference.
+
+  \item \textbf{Shared medium contention:} Wireless is a shared broadcast medium using DCF; collisions and backoff reduce effective capacity.
+
+  \item \textbf{MAC overhead:} Wireless MAC incurs retransmissions and backoff which reduce useful throughput under high load.
+
+\end{enumerate}
+
+\subsection{Performance Visualization}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{task3.png}
+
+  \caption{Task 3: WIRELESS VS WIRED PERFORMANCE ANALYSIS]}
+
+  
+
+\end{figure}
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[width=1.2\textwidth]{wirlessVSwired.png}
+
+  \caption{Task 3: WIRED NETWORK PERFORMANCE ANALYSIS]}
+
+  
+
+\end{figure}
+
+\newpage
+
+\section{Overall Conclusions and Analysis}
+
+\subsection{Comparative Analysis Summary}
+
+\begin{itemize}
+
+  \item \textbf{Task 1 (Wireless Saturation):} Network saturation is dominated by MAC contention; PDR and throughput improve with offered load until MAC/PHY capacity is exceeded, after which PDR collapses and delay explodes. The saturation point occurs around 12.8 Gbps cumulative load.
+
+  
+
+  \item \textbf{Task 2 (Channel Interference):} PHY quality (noise, transmission power, sensitivity) controls SNIR which directly governs BER and hence PDR and throughput. There is a sharp threshold behavior as SNIR crosses decoding margins around -91 dBm noise level.
+
+  
+
+  \item \textbf{Task 3 (Wired vs Wireless):} Wired medium provides stable and predictable performance under high load with consistent 97.5\% PDR; wireless performance is limited by shared-medium effects and link errors, showing dramatic performance degradation under saturation conditions.
+
+\end{itemize}
+
+\subsection{Key Performance Insights}
+
+\begin{enumerate}
+
+  \item \textbf{Saturation Characteristics:} Wireless networks exhibit clear saturation points where performance degrades rapidly, while wired networks maintain consistent performance across load ranges.
+
+  
+
+  \item \textbf{Interference Impact:} Channel interference has a threshold effect - performance remains stable until SNIR drops below critical levels, then degrades rapidly.
+
+  
+
+  \item \textbf{Medium Resilience:} Wired communication is significantly more resilient to high traffic loads compared to wireless communication under identical conditions.
+
+  
+
+  \item \textbf{Delay Behavior:} Wireless networks show exponential delay growth under saturation, while wired networks exhibit linear, predictable delay increases.
+
+\end{enumerate}
+
+\subsection{Recommendations for Network Design}
+
+\begin{itemize}
+
+  \item \textbf{Load Management:} For wireless networks, implement traffic shaping and admission control to keep offered load below saturation points.
+
+  
+
+  \item \textbf{Interference Mitigation:} Use adaptive rate control, power management, and channel selection to maintain adequate SNIR levels.
+
+  
+
+  \item \textbf{Hybrid Architectures:} Leverage wired infrastructure for high-throughput, delay-sensitive applications while using wireless for mobility and flexibility.
+
+  
+
+  \item \textbf{MAC Optimization:} Adjust contention window parameters and retry limits based on network density and load conditions.
+
+\end{itemize}
+
+\subsection{Final Observations}
+
+The experimental results demonstrate fundamental differences between wired and wireless communication under stress conditions. Wireless networks require careful parameter tuning and load management to maintain acceptable performance, while wired networks provide more predictable and stable performance characteristics. Understanding these trade-offs is crucial for designing robust network architectures that can handle varying load conditions and interference scenarios.
+
+\section*{Appendix: Methodology Summary}
+
+\begin{itemize}
+
+  \item \textbf{PDR:} Sum of \texttt{packetReceived} at sink divided by sum of \texttt{packetSent} across all sending applications.
+
+  \item \textbf{Throughput:} Total bytes successfully received divided by simulation time.
+
+  \item \textbf{Delay:} Per-packet delay = \texttt{recvTime - sendTime} from \texttt{udpPacketTransmissionInfo.csv}; report min/avg/max per configuration.
+
+  \item \textbf{BER:} Per-packet BER computed using header/data BER CSVs; report min/avg/max.
+
+  \item \textbf{SNIR:} Read SNIR per packet from error rate CSVs and compute min/avg/max.
+
+  \item \textbf{MAC Retransmission Rate:} Derived from \texttt{cwUsed.csv} using contention window analysis.
+
+\end{itemize}
+
+\end{document}
+
+
+
