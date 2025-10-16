@@ -12,7 +12,7 @@ import glob
 # ==============================================
 # REDIRECT OUTPUT TO FILE
 # ==============================================
-results_dir = "/mnt/Work/Assignments/Wireless/Assignment 2/Task 2/Results"
+results_dir = "/mnt/Work/Assignments/Wireless/Assignment 2/Task 1/Results"
 os.makedirs(results_dir, exist_ok=True)
 output_file = os.path.join(results_dir, "simulation_results.md")
 

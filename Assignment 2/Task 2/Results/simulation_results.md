@@ -3,785 +3,785 @@
 
 
 ===== Simulation Reliability Report for config_0.3_0.3 =====
-Total Transmissions: 73001
-Total Potential Receivers (ΣNtotal): 5621253
-Total Successful Receptions (ΣNrecv): 3924520217
-Average SMR (SMRavg): 69.82%
+Total Transmissions: 78227
+Total Potential Receivers (ΣNtotal): 6402887
+Total Successful Receptions (ΣNrecv): 4202444287
+Average SMR (SMRavg): 65.63%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44020  2201000.0
-1  0.133909  node[0]       2  42203  2110150.0
-2  0.214206  node[1]       2  44020  2201000.0
-3  0.233909  node[0]       2  42203  2110150.0
-4  0.314206  node[1]       2  44020  2201000.0
-5  0.333909  node[0]       2  42203  2110150.0
-6  0.414206  node[1]       2  44020  2201000.0
-7  0.433909  node[0]       2  42203  2110150.0
-8  0.514206  node[1]       2  44020  2201000.0
-9  0.533909  node[0]       2  42203  2110150.0
+0  0.114206  node[1]       2  41335  2066750.0
+1  0.133909  node[0]       2  37644  1882200.0
+2  0.214206  node[1]       2  41335  2066750.0
+3  0.233909  node[0]       2  37644  1882200.0
+4  0.314206  node[1]       2  41335  2066750.0
+5  0.333909  node[0]       2  37644  1882200.0
+6  0.414206  node[1]       2  41335  2066750.0
+7  0.433909  node[0]       2  37644  1882200.0
+8  0.514206  node[1]       2  41335  2066750.0
+9  0.533909  node[0]       2  37644  1882200.0
 
 ===== Simulation Reliability Report for config_0.4_0.3 =====
-Total Transmissions: 74181
-Total Potential Receivers (ΣNtotal): 5848071
-Total Successful Receptions (ΣNrecv): 4077069642
-Average SMR (SMRavg): 69.72%
+Total Transmissions: 77680
+Total Potential Receivers (ΣNtotal): 6315646
+Total Successful Receptions (ΣNrecv): 4119939675
+Average SMR (SMRavg): 65.23%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44462  2223100.0
-1  0.133909  node[0]       2  42283  2114150.0
-2  0.214206  node[1]       2  44462  2223100.0
-3  0.233909  node[0]       2  42283  2114150.0
-4  0.314206  node[1]       2  44462  2223100.0
-5  0.333909  node[0]       2  42283  2114150.0
-6  0.414206  node[1]       2  44462  2223100.0
-7  0.433909  node[0]       2  42283  2114150.0
-8  0.514206  node[1]       2  44462  2223100.0
-9  0.533909  node[0]       2  42283  2114150.0
+0  0.114206  node[1]       2  41161  2058050.0
+1  0.133909  node[0]       2  36298  1814900.0
+2  0.214206  node[1]       2  41161  2058050.0
+3  0.233909  node[0]       2  36298  1814900.0
+4  0.314206  node[1]       2  41161  2058050.0
+5  0.333909  node[0]       2  36298  1814900.0
+6  0.414206  node[1]       2  41161  2058050.0
+7  0.433909  node[0]       2  36298  1814900.0
+8  0.514206  node[1]       2  41161  2058050.0
+9  0.533909  node[0]       2  36298  1814900.0
 
 ===== Simulation Reliability Report for config_0.4_0.4 =====
-Total Transmissions: 73001
-Total Potential Receivers (ΣNtotal): 5621253
-Total Successful Receptions (ΣNrecv): 3924520217
-Average SMR (SMRavg): 69.82%
+Total Transmissions: 78227
+Total Potential Receivers (ΣNtotal): 6402887
+Total Successful Receptions (ΣNrecv): 4202444287
+Average SMR (SMRavg): 65.63%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44020  2201000.0
-1  0.133909  node[0]       2  42203  2110150.0
-2  0.214206  node[1]       2  44020  2201000.0
-3  0.233909  node[0]       2  42203  2110150.0
-4  0.314206  node[1]       2  44020  2201000.0
-5  0.333909  node[0]       2  42203  2110150.0
-6  0.414206  node[1]       2  44020  2201000.0
-7  0.433909  node[0]       2  42203  2110150.0
-8  0.514206  node[1]       2  44020  2201000.0
-9  0.533909  node[0]       2  42203  2110150.0
+0  0.114206  node[1]       2  41335  2066750.0
+1  0.133909  node[0]       2  37644  1882200.0
+2  0.214206  node[1]       2  41335  2066750.0
+3  0.233909  node[0]       2  37644  1882200.0
+4  0.314206  node[1]       2  41335  2066750.0
+5  0.333909  node[0]       2  37644  1882200.0
+6  0.414206  node[1]       2  41335  2066750.0
+7  0.433909  node[0]       2  37644  1882200.0
+8  0.514206  node[1]       2  41335  2066750.0
+9  0.533909  node[0]       2  37644  1882200.0
 
 ===== Simulation Reliability Report for config_0.5_0.5 =====
-Total Transmissions: 73001
-Total Potential Receivers (ΣNtotal): 5621253
-Total Successful Receptions (ΣNrecv): 3924520217
-Average SMR (SMRavg): 69.82%
+Total Transmissions: 78227
+Total Potential Receivers (ΣNtotal): 6402887
+Total Successful Receptions (ΣNrecv): 4202444287
+Average SMR (SMRavg): 65.63%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44020  2201000.0
-1  0.133909  node[0]       2  42203  2110150.0
-2  0.214206  node[1]       2  44020  2201000.0
-3  0.233909  node[0]       2  42203  2110150.0
-4  0.314206  node[1]       2  44020  2201000.0
-5  0.333909  node[0]       2  42203  2110150.0
-6  0.414206  node[1]       2  44020  2201000.0
-7  0.433909  node[0]       2  42203  2110150.0
-8  0.514206  node[1]       2  44020  2201000.0
-9  0.533909  node[0]       2  42203  2110150.0
+0  0.114206  node[1]       2  41335  2066750.0
+1  0.133909  node[0]       2  37644  1882200.0
+2  0.214206  node[1]       2  41335  2066750.0
+3  0.233909  node[0]       2  37644  1882200.0
+4  0.314206  node[1]       2  41335  2066750.0
+5  0.333909  node[0]       2  37644  1882200.0
+6  0.414206  node[1]       2  41335  2066750.0
+7  0.433909  node[0]       2  37644  1882200.0
+8  0.514206  node[1]       2  41335  2066750.0
+9  0.533909  node[0]       2  37644  1882200.0
 
 ===== Simulation Reliability Report for config_0.75_0.75 =====
-Total Transmissions: 73092
-Total Potential Receivers (ΣNtotal): 5627117
-Total Successful Receptions (ΣNrecv): 3938558465
-Average SMR (SMRavg): 69.99%
+Total Transmissions: 78198
+Total Potential Receivers (ΣNtotal): 6399672
+Total Successful Receptions (ΣNrecv): 4159324705
+Average SMR (SMRavg): 64.99%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44111  2205550.0
-1  0.133909  node[0]       2  42335  2116750.0
-2  0.214206  node[1]       2  44111  2205550.0
-3  0.233909  node[0]       2  42335  2116750.0
-4  0.314206  node[1]       2  44111  2205550.0
-5  0.333909  node[0]       2  42335  2116750.0
-6  0.414206  node[1]       2  44111  2205550.0
-7  0.433909  node[0]       2  42335  2116750.0
-8  0.514206  node[1]       2  44111  2205550.0
-9  0.533909  node[0]       2  42335  2116750.0
+0  0.114206  node[1]       2  40989  2049450.0
+1  0.133909  node[0]       2  37477  1873850.0
+2  0.214206  node[1]       2  40989  2049450.0
+3  0.233909  node[0]       2  37477  1873850.0
+4  0.314206  node[1]       2  40989  2049450.0
+5  0.333909  node[0]       2  37477  1873850.0
+6  0.414206  node[1]       2  40989  2049450.0
+7  0.433909  node[0]       2  37477  1873850.0
+8  0.514206  node[1]       2  40989  2049450.0
+9  0.533909  node[0]       2  37477  1873850.0
 
 ===== Simulation Reliability Report for config_12.0_9.0 =====
-Total Transmissions: 13904
-Total Potential Receivers (ΣNtotal): 196435
-Total Successful Receptions (ΣNrecv): 115714511
-Average SMR (SMRavg): 58.91%
+Total Transmissions: 14332
+Total Potential Receivers (ΣNtotal): 211496
+Total Successful Receptions (ΣNrecv): 123259916
+Average SMR (SMRavg): 58.28%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv    SMR(%)
-0  0.114206  node[1]       2   8195  409750.0
-1  0.133909  node[0]       2   7597  379850.0
-2  0.214206  node[1]       2   8195  409750.0
-3  0.233909  node[0]       2   7597  379850.0
-4  0.314206  node[1]       2   8195  409750.0
-5  0.333909  node[0]       2   7597  379850.0
-6  0.414206  node[1]       2   8195  409750.0
-7  0.433909  node[0]       2   7597  379850.0
-8  0.514206  node[1]       2   8195  409750.0
-9  0.533909  node[0]       2   7597  379850.0
+0  0.114206  node[1]       2   7175  358750.0
+1  0.133909  node[0]       2   6492  324600.0
+2  0.214206  node[1]       2   7175  358750.0
+3  0.233909  node[0]       2   6492  324600.0
+4  0.314206  node[1]       2   7175  358750.0
+5  0.333909  node[0]       2   6492  324600.0
+6  0.414206  node[1]       2   7175  358750.0
+7  0.433909  node[0]       2   6492  324600.0
+8  0.514206  node[1]       2   7175  358750.0
+9  0.533909  node[0]       2   6492  324600.0
 
 ===== Simulation Reliability Report for config_1.0_0.5 =====
-Total Transmissions: 73149
-Total Potential Receivers (ΣNtotal): 5641137
-Total Successful Receptions (ΣNrecv): 3893842345
-Average SMR (SMRavg): 69.03%
+Total Transmissions: 79379
+Total Potential Receivers (ΣNtotal): 6598055
+Total Successful Receptions (ΣNrecv): 4210146924
+Average SMR (SMRavg): 63.81%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  43952  2197600.0
-1  0.133909  node[0]       2  42041  2102050.0
-2  0.214206  node[1]       2  43952  2197600.0
-3  0.233909  node[0]       2  42041  2102050.0
-4  0.314206  node[1]       2  43952  2197600.0
-5  0.333909  node[0]       2  42041  2102050.0
-6  0.414206  node[1]       2  43952  2197600.0
-7  0.433909  node[0]       2  42041  2102050.0
-8  0.514206  node[1]       2  43952  2197600.0
-9  0.533909  node[0]       2  42041  2102050.0
+0  0.114206  node[1]       2  41164  2058200.0
+1  0.133909  node[0]       2  37209  1860450.0
+2  0.214206  node[1]       2  41164  2058200.0
+3  0.233909  node[0]       2  37209  1860450.0
+4  0.314206  node[1]       2  41164  2058200.0
+5  0.333909  node[0]       2  37209  1860450.0
+6  0.414206  node[1]       2  41164  2058200.0
+7  0.433909  node[0]       2  37209  1860450.0
+8  0.514206  node[1]       2  41164  2058200.0
+9  0.533909  node[0]       2  37209  1860450.0
 
 ===== Simulation Reliability Report for config_1.0_0.75 =====
-Total Transmissions: 74315
-Total Potential Receivers (ΣNtotal): 5864445
-Total Successful Receptions (ΣNrecv): 4061803959
-Average SMR (SMRavg): 69.26%
+Total Transmissions: 77573
+Total Potential Receivers (ΣNtotal): 6303269
+Total Successful Receptions (ΣNrecv): 4067675631
+Average SMR (SMRavg): 64.53%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  44211  2210550.0
-1  0.133909  node[0]       2  42009  2100450.0
-2  0.214206  node[1]       2  44211  2210550.0
-3  0.233909  node[0]       2  42009  2100450.0
-4  0.314206  node[1]       2  44211  2210550.0
-5  0.333909  node[0]       2  42009  2100450.0
-6  0.414206  node[1]       2  44211  2210550.0
-7  0.433909  node[0]       2  42009  2100450.0
-8  0.514206  node[1]       2  44211  2210550.0
-9  0.533909  node[0]       2  42009  2100450.0
+0  0.114206  node[1]       2  40419  2020950.0
+1  0.133909  node[0]       2  36039  1801950.0
+2  0.214206  node[1]       2  40419  2020950.0
+3  0.233909  node[0]       2  36039  1801950.0
+4  0.314206  node[1]       2  40419  2020950.0
+5  0.333909  node[0]       2  36039  1801950.0
+6  0.414206  node[1]       2  40419  2020950.0
+7  0.433909  node[0]       2  36039  1801950.0
+8  0.514206  node[1]       2  40419  2020950.0
+9  0.533909  node[0]       2  36039  1801950.0
 
 ===== Simulation Reliability Report for config_1.0_1.0 =====
-Total Transmissions: 72635
-Total Potential Receivers (ΣNtotal): 5548084
-Total Successful Receptions (ΣNrecv): 3854957979
-Average SMR (SMRavg): 69.48%
+Total Transmissions: 78081
+Total Potential Receivers (ΣNtotal): 6386669
+Total Successful Receptions (ΣNrecv): 4206227237
+Average SMR (SMRavg): 65.86%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  43886  2194300.0
-1  0.133909  node[0]       2  42033  2101650.0
-2  0.214206  node[1]       2  43886  2194300.0
-3  0.233909  node[0]       2  42033  2101650.0
-4  0.314206  node[1]       2  43886  2194300.0
-5  0.333909  node[0]       2  42033  2101650.0
-6  0.414206  node[1]       2  43886  2194300.0
-7  0.433909  node[0]       2  42033  2101650.0
-8  0.514206  node[1]       2  43886  2194300.0
-9  0.533909  node[0]       2  42033  2101650.0
+0  0.114206  node[1]       2  41082  2054100.0
+1  0.133909  node[0]       2  37404  1870200.0
+2  0.214206  node[1]       2  41082  2054100.0
+3  0.233909  node[0]       2  37404  1870200.0
+4  0.314206  node[1]       2  41082  2054100.0
+5  0.333909  node[0]       2  37404  1870200.0
+6  0.414206  node[1]       2  41082  2054100.0
+7  0.433909  node[0]       2  37404  1870200.0
+8  0.514206  node[1]       2  41082  2054100.0
+9  0.533909  node[0]       2  37404  1870200.0
 
 ===== Simulation Reliability Report for config_1.0_1.5 =====
-Total Transmissions: 73123
-Total Potential Receivers (ΣNtotal): 5668913
-Total Successful Receptions (ΣNrecv): 3979016040
-Average SMR (SMRavg): 70.19%
+Total Transmissions: 76851
+Total Potential Receivers (ΣNtotal): 6180435
+Total Successful Receptions (ΣNrecv): 4024554328
+Average SMR (SMRavg): 65.12%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  43850  2192500.0
-1  0.133909  node[0]       2  41887  2094350.0
-2  0.214206  node[1]       2  43850  2192500.0
-3  0.233909  node[0]       2  41887  2094350.0
-4  0.314206  node[1]       2  43850  2192500.0
-5  0.333909  node[0]       2  41887  2094350.0
-6  0.414206  node[1]       2  43850  2192500.0
-7  0.433909  node[0]       2  41887  2094350.0
-8  0.514206  node[1]       2  43850  2192500.0
-9  0.533909  node[0]       2  41887  2094350.0
+0  0.114206  node[1]       2  41001  2050050.0
+1  0.133909  node[0]       2  36174  1808700.0
+2  0.214206  node[1]       2  41001  2050050.0
+3  0.233909  node[0]       2  36174  1808700.0
+4  0.314206  node[1]       2  41001  2050050.0
+5  0.333909  node[0]       2  36174  1808700.0
+6  0.414206  node[1]       2  41001  2050050.0
+7  0.433909  node[0]       2  36174  1808700.0
+8  0.514206  node[1]       2  41001  2050050.0
+9  0.533909  node[0]       2  36174  1808700.0
 
 ===== Simulation Reliability Report for config_1.0_2.0 =====
-Total Transmissions: 67968
-Total Potential Receivers (ΣNtotal): 4787592
-Total Successful Receptions (ΣNrecv): 3415832429
-Average SMR (SMRavg): 71.35%
+Total Transmissions: 75323
+Total Potential Receivers (ΣNtotal): 6018093
+Total Successful Receptions (ΣNrecv): 3804999935
+Average SMR (SMRavg): 63.23%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  42387  2119350.0
-1  0.133909  node[0]       2  40476  2023800.0
-2  0.214206  node[1]       2  42387  2119350.0
-3  0.233909  node[0]       2  40476  2023800.0
-4  0.314206  node[1]       2  42387  2119350.0
-5  0.333909  node[0]       2  40476  2023800.0
-6  0.414206  node[1]       2  42387  2119350.0
-7  0.433909  node[0]       2  40476  2023800.0
-8  0.514206  node[1]       2  42387  2119350.0
-9  0.533909  node[0]       2  40476  2023800.0
+0  0.114206  node[1]       2  39036  1951800.0
+1  0.133909  node[0]       2  35544  1777200.0
+2  0.214206  node[1]       2  39036  1951800.0
+3  0.233909  node[0]       2  35544  1777200.0
+4  0.314206  node[1]       2  39036  1951800.0
+5  0.333909  node[0]       2  35544  1777200.0
+6  0.414206  node[1]       2  39036  1951800.0
+7  0.433909  node[0]       2  35544  1777200.0
+8  0.514206  node[1]       2  39036  1951800.0
+9  0.533909  node[0]       2  35544  1777200.0
 
 ===== Simulation Reliability Report for config_3.0_1.25 =====
-Total Transmissions: 64490
-Total Potential Receivers (ΣNtotal): 4557695
-Total Successful Receptions (ΣNrecv): 2960362678
-Average SMR (SMRavg): 64.95%
+Total Transmissions: 64023
+Total Potential Receivers (ΣNtotal): 4325399
+Total Successful Receptions (ΣNrecv): 2834101208
+Average SMR (SMRavg): 65.52%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  37156  1857800.0
-1  0.133909  node[0]       2  34991  1749550.0
-2  0.214206  node[1]       2  37156  1857800.0
-3  0.233909  node[0]       2  34991  1749550.0
-4  0.314206  node[1]       2  37156  1857800.0
-5  0.333909  node[0]       2  34991  1749550.0
-6  0.414206  node[1]       2  37156  1857800.0
-7  0.433909  node[0]       2  34991  1749550.0
-8  0.514206  node[1]       2  37156  1857800.0
-9  0.533909  node[0]       2  34991  1749550.0
+0  0.114206  node[1]       2  34210  1710500.0
+1  0.133909  node[0]       2  30509  1525450.0
+2  0.214206  node[1]       2  34210  1710500.0
+3  0.233909  node[0]       2  30509  1525450.0
+4  0.314206  node[1]       2  34210  1710500.0
+5  0.333909  node[0]       2  30509  1525450.0
+6  0.414206  node[1]       2  34210  1710500.0
+7  0.433909  node[0]       2  30509  1525450.0
+8  0.514206  node[1]       2  34210  1710500.0
+9  0.533909  node[0]       2  30509  1525450.0
 
 ===== Simulation Reliability Report for config_3.0_4.0 =====
-Total Transmissions: 41571
-Total Potential Receivers (ΣNtotal): 1842513
-Total Successful Receptions (ΣNrecv): 1210426474
-Average SMR (SMRavg): 65.69%
+Total Transmissions: 41810
+Total Potential Receivers (ΣNtotal): 1876068
+Total Successful Receptions (ΣNrecv): 1180828297
+Average SMR (SMRavg): 62.94%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  24819  1240950.0
-1  0.133909  node[0]       2  23778  1188900.0
-2  0.214206  node[1]       2  24819  1240950.0
-3  0.233909  node[0]       2  23778  1188900.0
-4  0.314206  node[1]       2  24819  1240950.0
-5  0.333909  node[0]       2  23778  1188900.0
-6  0.414206  node[1]       2  24819  1240950.0
-7  0.433909  node[0]       2  23778  1188900.0
-8  0.514206  node[1]       2  24819  1240950.0
-9  0.533909  node[0]       2  23778  1188900.0
+0  0.114206  node[1]       2  22719  1135950.0
+1  0.133909  node[0]       2  18900   945000.0
+2  0.214206  node[1]       2  22719  1135950.0
+3  0.233909  node[0]       2  18900   945000.0
+4  0.314206  node[1]       2  22719  1135950.0
+5  0.333909  node[0]       2  18900   945000.0
+6  0.414206  node[1]       2  22719  1135950.0
+7  0.433909  node[0]       2  18900   945000.0
+8  0.514206  node[1]       2  22719  1135950.0
+9  0.533909  node[0]       2  18900   945000.0
 
 ===== Simulation Reliability Report for config_5.0_2.0 =====
-Total Transmissions: 50067
-Total Potential Receivers (ΣNtotal): 2691311
-Total Successful Receptions (ΣNrecv): 1840716448
-Average SMR (SMRavg): 68.39%
+Total Transmissions: 50221
+Total Potential Receivers (ΣNtotal): 2722679
+Total Successful Receptions (ΣNrecv): 1687695323
+Average SMR (SMRavg): 61.99%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  30723  1536150.0
-1  0.133909  node[0]       2  28736  1436800.0
-2  0.214206  node[1]       2  30723  1536150.0
-3  0.233909  node[0]       2  28736  1436800.0
-4  0.314206  node[1]       2  30723  1536150.0
-5  0.333909  node[0]       2  28736  1436800.0
-6  0.414206  node[1]       2  30723  1536150.0
-7  0.433909  node[0]       2  28736  1436800.0
-8  0.514206  node[1]       2  30723  1536150.0
-9  0.533909  node[0]       2  28736  1436800.0
+0  0.114206  node[1]       2  25147  1257350.0
+1  0.133909  node[0]       2  23836  1191800.0
+2  0.214206  node[1]       2  25147  1257350.0
+3  0.233909  node[0]       2  23836  1191800.0
+4  0.314206  node[1]       2  25147  1257350.0
+5  0.333909  node[0]       2  23836  1191800.0
+6  0.414206  node[1]       2  25147  1257350.0
+7  0.433909  node[0]       2  23836  1191800.0
+8  0.514206  node[1]       2  25147  1257350.0
+9  0.533909  node[0]       2  23836  1191800.0
 
 ===== Simulation Reliability Report for config_5.0_9.0 =====
-Total Transmissions: 34056
-Total Potential Receivers (ΣNtotal): 1230945
-Total Successful Receptions (ΣNrecv): 819039945
-Average SMR (SMRavg): 66.54%
-
------ First 10 SMR Entries -----
-       time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  20880  1044000.0
-1  0.133909  node[0]       2  19202   960100.0
-2  0.214206  node[1]       2  20880  1044000.0
-3  0.233909  node[0]       2  19202   960100.0
-4  0.314206  node[1]       2  20880  1044000.0
-5  0.333909  node[0]       2  19202   960100.0
-6  0.414206  node[1]       2  20880  1044000.0
-7  0.433909  node[0]       2  19202   960100.0
-8  0.514206  node[1]       2  20880  1044000.0
-9  0.533909  node[0]       2  19202   960100.0
-
-===== Simulation Reliability Report for config_7.0_10.0 =====
-Total Transmissions: 13904
-Total Potential Receivers (ΣNtotal): 196435
-Total Successful Receptions (ΣNrecv): 115714511
-Average SMR (SMRavg): 58.91%
+Total Transmissions: 22726
+Total Potential Receivers (ΣNtotal): 546272
+Total Successful Receptions (ΣNrecv): 338159671
+Average SMR (SMRavg): 61.90%
 
 ----- First 10 SMR Entries -----
        time   sender  Ntotal  Nrecv    SMR(%)
-0  0.114206  node[1]       2   8195  409750.0
-1  0.133909  node[0]       2   7597  379850.0
-2  0.214206  node[1]       2   8195  409750.0
-3  0.233909  node[0]       2   7597  379850.0
-4  0.314206  node[1]       2   8195  409750.0
-5  0.333909  node[0]       2   7597  379850.0
-6  0.414206  node[1]       2   8195  409750.0
-7  0.433909  node[0]       2   7597  379850.0
-8  0.514206  node[1]       2   8195  409750.0
-9  0.533909  node[0]       2   7597  379850.0
+0  0.114206  node[1]       2  11806  590300.0
+1  0.133909  node[0]       2  10391  519550.0
+2  0.214206  node[1]       2  11806  590300.0
+3  0.233909  node[0]       2  10391  519550.0
+4  0.314206  node[1]       2  11806  590300.0
+5  0.333909  node[0]       2  10391  519550.0
+6  0.414206  node[1]       2  11806  590300.0
+7  0.433909  node[0]       2  10391  519550.0
+8  0.514206  node[1]       2  11806  590300.0
+9  0.533909  node[0]       2  10391  519550.0
 
-===== Simulation Reliability Report for config_7.0_3.0 =====
-Total Transmissions: 34056
-Total Potential Receivers (ΣNtotal): 1230945
-Total Successful Receptions (ΣNrecv): 819039945
-Average SMR (SMRavg): 66.54%
+===== Simulation Reliability Report for config_7.0_10.0 =====
+Total Transmissions: 17747
+Total Potential Receivers (ΣNtotal): 328001
+Total Successful Receptions (ΣNrecv): 195714872
+Average SMR (SMRavg): 59.67%
 
 ----- First 10 SMR Entries -----
-       time   sender  Ntotal  Nrecv     SMR(%)
-0  0.114206  node[1]       2  20880  1044000.0
-1  0.133909  node[0]       2  19202   960100.0
-2  0.214206  node[1]       2  20880  1044000.0
-3  0.233909  node[0]       2  19202   960100.0
-4  0.314206  node[1]       2  20880  1044000.0
-5  0.333909  node[0]       2  19202   960100.0
-6  0.414206  node[1]       2  20880  1044000.0
-7  0.433909  node[0]       2  19202   960100.0
-8  0.514206  node[1]       2  20880  1044000.0
-9  0.533909  node[0]       2  19202   960100.0
+       time   sender  Ntotal  Nrecv    SMR(%)
+0  0.114206  node[1]       2   9206  460300.0
+1  0.133909  node[0]       2   7881  394050.0
+2  0.214206  node[1]       2   9206  460300.0
+3  0.233909  node[0]       2   7881  394050.0
+4  0.314206  node[1]       2   9206  460300.0
+5  0.333909  node[0]       2   7881  394050.0
+6  0.414206  node[1]       2   9206  460300.0
+7  0.433909  node[0]       2   7881  394050.0
+8  0.514206  node[1]       2   9206  460300.0
+9  0.533909  node[0]       2   7881  394050.0
+
+===== Simulation Reliability Report for config_7.0_3.0 =====
+Total Transmissions: 34377
+Total Potential Receivers (ΣNtotal): 1265371
+Total Successful Receptions (ΣNrecv): 789651587
+Average SMR (SMRavg): 62.40%
+
+----- First 10 SMR Entries -----
+       time   sender  Ntotal  Nrecv    SMR(%)
+0  0.114206  node[1]       2  17581  879050.0
+1  0.133909  node[0]       2  16055  802750.0
+2  0.214206  node[1]       2  17581  879050.0
+3  0.233909  node[0]       2  16055  802750.0
+4  0.314206  node[1]       2  17581  879050.0
+5  0.333909  node[0]       2  16055  802750.0
+6  0.414206  node[1]       2  17581  879050.0
+7  0.433909  node[0]       2  16055  802750.0
+8  0.514206  node[1]       2  17581  879050.0
+9  0.533909  node[0]       2  16055  802750.0
 
 ==== FINAL SUMMARY ACROSS ALL CONFIGS ====
-config_0.3_0.3 → SMRavg: 69.82%
-config_0.4_0.3 → SMRavg: 69.72%
-config_0.4_0.4 → SMRavg: 69.82%
-config_0.5_0.5 → SMRavg: 69.82%
-config_0.75_0.75 → SMRavg: 69.99%
-config_12.0_9.0 → SMRavg: 58.91%
-config_1.0_0.5 → SMRavg: 69.03%
-config_1.0_0.75 → SMRavg: 69.26%
-config_1.0_1.0 → SMRavg: 69.48%
-config_1.0_1.5 → SMRavg: 70.19%
-config_1.0_2.0 → SMRavg: 71.35%
-config_3.0_1.25 → SMRavg: 64.95%
-config_3.0_4.0 → SMRavg: 65.69%
-config_5.0_2.0 → SMRavg: 68.39%
-config_5.0_9.0 → SMRavg: 66.54%
-config_7.0_10.0 → SMRavg: 58.91%
-config_7.0_3.0 → SMRavg: 66.54%
+config_0.3_0.3 → SMRavg: 65.63%
+config_0.4_0.3 → SMRavg: 65.23%
+config_0.4_0.4 → SMRavg: 65.63%
+config_0.5_0.5 → SMRavg: 65.63%
+config_0.75_0.75 → SMRavg: 64.99%
+config_12.0_9.0 → SMRavg: 58.28%
+config_1.0_0.5 → SMRavg: 63.81%
+config_1.0_0.75 → SMRavg: 64.53%
+config_1.0_1.0 → SMRavg: 65.86%
+config_1.0_1.5 → SMRavg: 65.12%
+config_1.0_2.0 → SMRavg: 63.23%
+config_3.0_1.25 → SMRavg: 65.52%
+config_3.0_4.0 → SMRavg: 62.94%
+config_5.0_2.0 → SMRavg: 61.99%
+config_5.0_9.0 → SMRavg: 61.90%
+config_7.0_10.0 → SMRavg: 59.67%
+config_7.0_3.0 → SMRavg: 62.40%
 
 ✅ All SMRavg values collected in: SMRavg_list
 
 ===== NoM Metrics for config_0.3_0.3 =====
-🌐 Mean NoM               : 0.241755 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.900000 sec
-🌐 Max NoM                : 6.099999 sec
+🌐 Mean NoM               : 0.386694 sec
+🌐 Median NoM (50th %)    : 0.100068 sec
+🌐 95th Percentile NoM    : 1.200003 sec
+🌐 Max NoM                : 12.600000 sec
 
 
 ===== NoM Metrics for config_0.4_0.3 =====
-🌐 Mean NoM               : 0.229687 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.899998 sec
-🌐 Max NoM                : 6.100010 sec
+🌐 Mean NoM               : 0.412247 sec
+🌐 Median NoM (50th %)    : 0.100051 sec
+🌐 95th Percentile NoM    : 1.400004 sec
+🌐 Max NoM                : 11.599994 sec
 
 
 ===== NoM Metrics for config_0.4_0.4 =====
-🌐 Mean NoM               : 0.241755 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.900000 sec
-🌐 Max NoM                : 6.099999 sec
+🌐 Mean NoM               : 0.386694 sec
+🌐 Median NoM (50th %)    : 0.100068 sec
+🌐 95th Percentile NoM    : 1.200003 sec
+🌐 Max NoM                : 12.600000 sec
 
 
 ===== NoM Metrics for config_0.5_0.5 =====
-🌐 Mean NoM               : 0.241755 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.900000 sec
-🌐 Max NoM                : 6.099999 sec
+🌐 Mean NoM               : 0.386694 sec
+🌐 Median NoM (50th %)    : 0.100068 sec
+🌐 95th Percentile NoM    : 1.200003 sec
+🌐 Max NoM                : 12.600000 sec
 
 
 ===== NoM Metrics for config_0.75_0.75 =====
-🌐 Mean NoM               : 0.219732 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.799996 sec
-🌐 Max NoM                : 8.300003 sec
+🌐 Mean NoM               : 0.435240 sec
+🌐 Median NoM (50th %)    : 0.100048 sec
+🌐 95th Percentile NoM    : 1.499998 sec
+🌐 Max NoM                : 16.500007 sec
 
 
 ===== NoM Metrics for config_12.0_9.0 =====
-🌐 Mean NoM               : 0.295389 sec
+🌐 Mean NoM               : 0.283269 sec
 🌐 Median NoM (50th %)    : 0.100012 sec
-🌐 95th Percentile NoM    : 0.800000 sec
-🌐 Max NoM                : 10.200003 sec
+🌐 95th Percentile NoM    : 0.800003 sec
+🌐 Max NoM                : 3.200003 sec
 
 
 ===== NoM Metrics for config_1.0_0.5 =====
-🌐 Mean NoM               : 0.265393 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 1.199964 sec
-🌐 Max NoM                : 6.200002 sec
+🌐 Mean NoM               : 0.426431 sec
+🌐 Median NoM (50th %)    : 0.100160 sec
+🌐 95th Percentile NoM    : 1.400001 sec
+🌐 Max NoM                : 12.000006 sec
 
 
 ===== NoM Metrics for config_1.0_0.75 =====
-🌐 Mean NoM               : 0.288608 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 1.300005 sec
-🌐 Max NoM                : 6.499995 sec
+🌐 Mean NoM               : 0.407190 sec
+🌐 Median NoM (50th %)    : 0.100029 sec
+🌐 95th Percentile NoM    : 1.299997 sec
+🌐 Max NoM                : 35.499995 sec
 
 
 ===== NoM Metrics for config_1.0_1.0 =====
-🌐 Mean NoM               : 0.237002 sec
+🌐 Mean NoM               : 0.373998 sec
 🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 1.000006 sec
-🌐 Max NoM                : 5.900008 sec
+🌐 95th Percentile NoM    : 1.200002 sec
+🌐 Max NoM                : 12.900001 sec
 
 
 ===== NoM Metrics for config_1.0_1.5 =====
-🌐 Mean NoM               : 0.194676 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.699998 sec
-🌐 Max NoM                : 5.600007 sec
+🌐 Mean NoM               : 0.405309 sec
+🌐 Median NoM (50th %)    : 0.100047 sec
+🌐 95th Percentile NoM    : 1.299999 sec
+🌐 Max NoM                : 18.500006 sec
 
 
 ===== NoM Metrics for config_1.0_2.0 =====
-🌐 Mean NoM               : 0.338324 sec
-🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 1.000032 sec
-🌐 Max NoM                : 42.400031 sec
+🌐 Mean NoM               : 0.505792 sec
+🌐 Median NoM (50th %)    : 0.100047 sec
+🌐 95th Percentile NoM    : 1.899999 sec
+🌐 Max NoM                : 9.700009 sec
 
 
 ===== NoM Metrics for config_3.0_1.25 =====
-🌐 Mean NoM               : 0.313432 sec
+🌐 Mean NoM               : 0.338558 sec
 🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 1.399997 sec
-🌐 Max NoM                : 8.199998 sec
+🌐 95th Percentile NoM    : 1.100003 sec
+🌐 Max NoM                : 7.200003 sec
 
 
 ===== NoM Metrics for config_3.0_4.0 =====
-🌐 Mean NoM               : 0.244041 sec
+🌐 Mean NoM               : 0.334300 sec
 🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.800001 sec
-🌐 Max NoM                : 6.900003 sec
+🌐 95th Percentile NoM    : 1.000011 sec
+🌐 Max NoM                : 9.699999 sec
 
 
 ===== NoM Metrics for config_5.0_2.0 =====
-🌐 Mean NoM               : 0.199723 sec
+🌐 Mean NoM               : 0.398454 sec
 🌐 Median NoM (50th %)    : 0.100013 sec
-🌐 95th Percentile NoM    : 0.600177 sec
-🌐 Max NoM                : 5.400005 sec
+🌐 95th Percentile NoM    : 1.800001 sec
+🌐 Max NoM                : 7.900005 sec
 
 
 ===== NoM Metrics for config_5.0_9.0 =====
-🌐 Mean NoM               : 0.210107 sec
-🌐 Median NoM (50th %)    : 0.100012 sec
-🌐 95th Percentile NoM    : 0.699999 sec
-🌐 Max NoM                : 8.299994 sec
+🌐 Mean NoM               : 0.311209 sec
+🌐 Median NoM (50th %)    : 0.100013 sec
+🌐 95th Percentile NoM    : 0.999998 sec
+🌐 Max NoM                : 9.000009 sec
 
 
 ===== NoM Metrics for config_7.0_10.0 =====
-🌐 Mean NoM               : 0.295389 sec
-🌐 Median NoM (50th %)    : 0.100012 sec
-🌐 95th Percentile NoM    : 0.800000 sec
-🌐 Max NoM                : 10.200003 sec
+🌐 Mean NoM               : 0.321261 sec
+🌐 Median NoM (50th %)    : 0.100013 sec
+🌐 95th Percentile NoM    : 1.000001 sec
+🌐 Max NoM                : 8.800004 sec
 
 
 ===== NoM Metrics for config_7.0_3.0 =====
-🌐 Mean NoM               : 0.210107 sec
-🌐 Median NoM (50th %)    : 0.100012 sec
-🌐 95th Percentile NoM    : 0.699999 sec
-🌐 Max NoM                : 8.299994 sec
+🌐 Mean NoM               : 0.324397 sec
+🌐 Median NoM (50th %)    : 0.100013 sec
+🌐 95th Percentile NoM    : 1.000004 sec
+🌐 Max NoM                : 10.700008 sec
 
 
 ==== FINAL NoM SUMMARY ACROSS ALL CONFIGS ====
-config_0.3_0.3 → Mean: 0.241755, Median: 0.100013, 95th%: 0.900000, Max: 6.099999
-config_0.4_0.3 → Mean: 0.229687, Median: 0.100013, 95th%: 0.899998, Max: 6.100010
-config_0.4_0.4 → Mean: 0.241755, Median: 0.100013, 95th%: 0.900000, Max: 6.099999
-config_0.5_0.5 → Mean: 0.241755, Median: 0.100013, 95th%: 0.900000, Max: 6.099999
-config_0.75_0.75 → Mean: 0.219732, Median: 0.100013, 95th%: 0.799996, Max: 8.300003
-config_12.0_9.0 → Mean: 0.295389, Median: 0.100012, 95th%: 0.800000, Max: 10.200003
-config_1.0_0.5 → Mean: 0.265393, Median: 0.100013, 95th%: 1.199964, Max: 6.200002
-config_1.0_0.75 → Mean: 0.288608, Median: 0.100013, 95th%: 1.300005, Max: 6.499995
-config_1.0_1.0 → Mean: 0.237002, Median: 0.100013, 95th%: 1.000006, Max: 5.900008
-config_1.0_1.5 → Mean: 0.194676, Median: 0.100013, 95th%: 0.699998, Max: 5.600007
-config_1.0_2.0 → Mean: 0.338324, Median: 0.100013, 95th%: 1.000032, Max: 42.400031
-config_3.0_1.25 → Mean: 0.313432, Median: 0.100013, 95th%: 1.399997, Max: 8.199998
-config_3.0_4.0 → Mean: 0.244041, Median: 0.100013, 95th%: 0.800001, Max: 6.900003
-config_5.0_2.0 → Mean: 0.199723, Median: 0.100013, 95th%: 0.600177, Max: 5.400005
-config_5.0_9.0 → Mean: 0.210107, Median: 0.100012, 95th%: 0.699999, Max: 8.299994
-config_7.0_10.0 → Mean: 0.295389, Median: 0.100012, 95th%: 0.800000, Max: 10.200003
-config_7.0_3.0 → Mean: 0.210107, Median: 0.100012, 95th%: 0.699999, Max: 8.299994
+config_0.3_0.3 → Mean: 0.386694, Median: 0.100068, 95th%: 1.200003, Max: 12.600000
+config_0.4_0.3 → Mean: 0.412247, Median: 0.100051, 95th%: 1.400004, Max: 11.599994
+config_0.4_0.4 → Mean: 0.386694, Median: 0.100068, 95th%: 1.200003, Max: 12.600000
+config_0.5_0.5 → Mean: 0.386694, Median: 0.100068, 95th%: 1.200003, Max: 12.600000
+config_0.75_0.75 → Mean: 0.435240, Median: 0.100048, 95th%: 1.499998, Max: 16.500007
+config_12.0_9.0 → Mean: 0.283269, Median: 0.100012, 95th%: 0.800003, Max: 3.200003
+config_1.0_0.5 → Mean: 0.426431, Median: 0.100160, 95th%: 1.400001, Max: 12.000006
+config_1.0_0.75 → Mean: 0.407190, Median: 0.100029, 95th%: 1.299997, Max: 35.499995
+config_1.0_1.0 → Mean: 0.373998, Median: 0.100013, 95th%: 1.200002, Max: 12.900001
+config_1.0_1.5 → Mean: 0.405309, Median: 0.100047, 95th%: 1.299999, Max: 18.500006
+config_1.0_2.0 → Mean: 0.505792, Median: 0.100047, 95th%: 1.899999, Max: 9.700009
+config_3.0_1.25 → Mean: 0.338558, Median: 0.100013, 95th%: 1.100003, Max: 7.200003
+config_3.0_4.0 → Mean: 0.334300, Median: 0.100013, 95th%: 1.000011, Max: 9.699999
+config_5.0_2.0 → Mean: 0.398454, Median: 0.100013, 95th%: 1.800001, Max: 7.900005
+config_5.0_9.0 → Mean: 0.311209, Median: 0.100013, 95th%: 0.999998, Max: 9.000009
+config_7.0_10.0 → Mean: 0.321261, Median: 0.100013, 95th%: 1.000001, Max: 8.800004
+config_7.0_3.0 → Mean: 0.324397, Median: 0.100013, 95th%: 1.000004, Max: 10.700008
 
 ✅ All NoM metrics stored in:
 mean_NoM_list, median_NoM_list, p95_NoM_list, max_NoM_list
 
 ===== E2E Delay Metrics for config_0.3_0.3 =====
-Total Packets Analyzed   : 5304906
-Average E2E Delay (s)     : 0.063198
-Maximum E2E Delay (s)     : 83.053882
+Total Packets Analyzed   : 5299925
+Average E2E Delay (s)     : 0.000131
+Maximum E2E Delay (s)     : 0.000458
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_0.4_0.3 =====
-Total Packets Analyzed   : 5518869
-Average E2E Delay (s)     : 0.062201
-Maximum E2E Delay (s)     : 83.308663
+Total Packets Analyzed   : 5208075
+Average E2E Delay (s)     : 0.000126
+Maximum E2E Delay (s)     : 0.000440
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_0.4_0.4 =====
-Total Packets Analyzed   : 5304906
-Average E2E Delay (s)     : 0.063198
-Maximum E2E Delay (s)     : 83.053882
+Total Packets Analyzed   : 5299925
+Average E2E Delay (s)     : 0.000131
+Maximum E2E Delay (s)     : 0.000458
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_0.5_0.5 =====
-Total Packets Analyzed   : 5304906
-Average E2E Delay (s)     : 0.063198
-Maximum E2E Delay (s)     : 83.053882
+Total Packets Analyzed   : 5299925
+Average E2E Delay (s)     : 0.000131
+Maximum E2E Delay (s)     : 0.000458
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_0.75_0.75 =====
-Total Packets Analyzed   : 5320871
-Average E2E Delay (s)     : 0.057255
-Maximum E2E Delay (s)     : 80.397200
+Total Packets Analyzed   : 5248073
+Average E2E Delay (s)     : 0.000122
+Maximum E2E Delay (s)     : 0.000426
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_12.0_9.0 =====
-Total Packets Analyzed   : 167520
-Average E2E Delay (s)     : 0.003623
-Maximum E2E Delay (s)     : 4.190788
+Total Packets Analyzed   : 169460
+Average E2E Delay (s)     : 0.000113
+Maximum E2E Delay (s)     : 0.000225
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_1.0_0.5 =====
-Total Packets Analyzed   : 5278638
-Average E2E Delay (s)     : 0.063884
-Maximum E2E Delay (s)     : 85.561761
+Total Packets Analyzed   : 5350970
+Average E2E Delay (s)     : 0.000132
+Maximum E2E Delay (s)     : 0.000610
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_1.0_0.75 =====
-Total Packets Analyzed   : 5491489
-Average E2E Delay (s)     : 0.063698
-Maximum E2E Delay (s)     : 83.394552
+Total Packets Analyzed   : 5148685
+Average E2E Delay (s)     : 0.000121
+Maximum E2E Delay (s)     : 0.000308
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_1.0_1.0 =====
-Total Packets Analyzed   : 5199212
-Average E2E Delay (s)     : 0.066077
-Maximum E2E Delay (s)     : 85.469133
+Total Packets Analyzed   : 5314030
+Average E2E Delay (s)     : 0.000122
+Maximum E2E Delay (s)     : 0.000308
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_1.0_1.5 =====
-Total Packets Analyzed   : 5400570
-Average E2E Delay (s)     : 0.068953
-Maximum E2E Delay (s)     : 85.626506
+Total Packets Analyzed   : 5108820
+Average E2E Delay (s)     : 0.000124
+Maximum E2E Delay (s)     : 0.000610
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_1.0_2.0 =====
-Total Packets Analyzed   : 4487315
-Average E2E Delay (s)     : 0.055533
-Maximum E2E Delay (s)     : 86.034480
+Total Packets Analyzed   : 4917103
+Average E2E Delay (s)     : 0.000123
+Maximum E2E Delay (s)     : 0.000389
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_3.0_1.25 =====
-Total Packets Analyzed   : 4215230
-Average E2E Delay (s)     : 0.078455
-Maximum E2E Delay (s)     : 87.274677
+Total Packets Analyzed   : 3682906
+Average E2E Delay (s)     : 0.000122
+Maximum E2E Delay (s)     : 0.000302
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_3.0_4.0 =====
-Total Packets Analyzed   : 1686070
-Average E2E Delay (s)     : 0.004470
-Maximum E2E Delay (s)     : 10.436583
+Total Packets Analyzed   : 1602659
+Average E2E Delay (s)     : 0.000119
+Maximum E2E Delay (s)     : 0.000419
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_5.0_2.0 =====
-Total Packets Analyzed   : 2533117
-Average E2E Delay (s)     : 0.057415
-Maximum E2E Delay (s)     : 85.285528
+Total Packets Analyzed   : 2267098
+Average E2E Delay (s)     : 0.000117
+Maximum E2E Delay (s)     : 0.000308
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_5.0_9.0 =====
-Total Packets Analyzed   : 1137860
-Average E2E Delay (s)     : 0.003158
-Maximum E2E Delay (s)     : 6.221726
+Total Packets Analyzed   : 458977
+Average E2E Delay (s)     : 0.000114
+Maximum E2E Delay (s)     : 0.000208
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_7.0_10.0 =====
-Total Packets Analyzed   : 167520
-Average E2E Delay (s)     : 0.003623
-Maximum E2E Delay (s)     : 4.190788
+Total Packets Analyzed   : 268641
+Average E2E Delay (s)     : 0.000117
+Maximum E2E Delay (s)     : 0.000278
 Minimum E2E Delay (s)     : 0.000105
 
 
 ===== E2E Delay Metrics for config_7.0_3.0 =====
-Total Packets Analyzed   : 1137860
-Average E2E Delay (s)     : 0.003158
-Maximum E2E Delay (s)     : 6.221726
+Total Packets Analyzed   : 1068784
+Average E2E Delay (s)     : 0.000117
+Maximum E2E Delay (s)     : 0.000277
 Minimum E2E Delay (s)     : 0.000105
 
 
 ==== FINAL E2E DELAY SUMMARY ACROSS ALL CONFIGS ====
-config_0.3_0.3 → Avg: 0.063198, Max: 83.053882, Min: 0.000105
-config_0.4_0.3 → Avg: 0.062201, Max: 83.308663, Min: 0.000105
-config_0.4_0.4 → Avg: 0.063198, Max: 83.053882, Min: 0.000105
-config_0.5_0.5 → Avg: 0.063198, Max: 83.053882, Min: 0.000105
-config_0.75_0.75 → Avg: 0.057255, Max: 80.397200, Min: 0.000105
-config_12.0_9.0 → Avg: 0.003623, Max: 4.190788, Min: 0.000105
-config_1.0_0.5 → Avg: 0.063884, Max: 85.561761, Min: 0.000105
-config_1.0_0.75 → Avg: 0.063698, Max: 83.394552, Min: 0.000105
-config_1.0_1.0 → Avg: 0.066077, Max: 85.469133, Min: 0.000105
-config_1.0_1.5 → Avg: 0.068953, Max: 85.626506, Min: 0.000105
-config_1.0_2.0 → Avg: 0.055533, Max: 86.034480, Min: 0.000105
-config_3.0_1.25 → Avg: 0.078455, Max: 87.274677, Min: 0.000105
-config_3.0_4.0 → Avg: 0.004470, Max: 10.436583, Min: 0.000105
-config_5.0_2.0 → Avg: 0.057415, Max: 85.285528, Min: 0.000105
-config_5.0_9.0 → Avg: 0.003158, Max: 6.221726, Min: 0.000105
-config_7.0_10.0 → Avg: 0.003623, Max: 4.190788, Min: 0.000105
-config_7.0_3.0 → Avg: 0.003158, Max: 6.221726, Min: 0.000105
+config_0.3_0.3 → Avg: 0.000131, Max: 0.000458, Min: 0.000105
+config_0.4_0.3 → Avg: 0.000126, Max: 0.000440, Min: 0.000105
+config_0.4_0.4 → Avg: 0.000131, Max: 0.000458, Min: 0.000105
+config_0.5_0.5 → Avg: 0.000131, Max: 0.000458, Min: 0.000105
+config_0.75_0.75 → Avg: 0.000122, Max: 0.000426, Min: 0.000105
+config_12.0_9.0 → Avg: 0.000113, Max: 0.000225, Min: 0.000105
+config_1.0_0.5 → Avg: 0.000132, Max: 0.000610, Min: 0.000105
+config_1.0_0.75 → Avg: 0.000121, Max: 0.000308, Min: 0.000105
+config_1.0_1.0 → Avg: 0.000122, Max: 0.000308, Min: 0.000105
+config_1.0_1.5 → Avg: 0.000124, Max: 0.000610, Min: 0.000105
+config_1.0_2.0 → Avg: 0.000123, Max: 0.000389, Min: 0.000105
+config_3.0_1.25 → Avg: 0.000122, Max: 0.000302, Min: 0.000105
+config_3.0_4.0 → Avg: 0.000119, Max: 0.000419, Min: 0.000105
+config_5.0_2.0 → Avg: 0.000117, Max: 0.000308, Min: 0.000105
+config_5.0_9.0 → Avg: 0.000114, Max: 0.000208, Min: 0.000105
+config_7.0_10.0 → Avg: 0.000117, Max: 0.000278, Min: 0.000105
+config_7.0_3.0 → Avg: 0.000117, Max: 0.000277, Min: 0.000105
 
 ✅ All E2E delay metrics stored in:
 avg_delay_list, max_delay_list, min_delay_list
 
 ===== CAD Metrics for config_0.3_0.3 =====
-Total valid CAD records : 73001
-📌 Average CAD      : 0.000020423153 seconds
-✅ Minimum CAD      : 0.000000000077 seconds
-🚨 Maximum CAD      : 0.000442464744 seconds
-🔸 Median CAD (50%) : 0.000007527477 seconds
-🔹 95th Percentile  : 0.000143063581 seconds
+Total valid CAD records : 78227
+📌 Average CAD      : 0.000022141024 seconds
+✅ Minimum CAD      : 0.000000000039 seconds
+🚨 Maximum CAD      : 0.000351049889 seconds
+🔸 Median CAD (50%) : 0.000007705010 seconds
+🔹 95th Percentile  : 0.000132271597 seconds
 
 ===== CAD Metrics for config_0.4_0.3 =====
-Total valid CAD records : 74181
-📌 Average CAD      : 0.000020376883 seconds
-✅ Minimum CAD      : 0.000000000053 seconds
-🚨 Maximum CAD      : 0.000499168181 seconds
-🔸 Median CAD (50%) : 0.000007458411 seconds
-🔹 95th Percentile  : 0.000127635380 seconds
+Total valid CAD records : 77680
+📌 Average CAD      : 0.000017826191 seconds
+✅ Minimum CAD      : 0.000000000017 seconds
+🚨 Maximum CAD      : 0.000332460740 seconds
+🔸 Median CAD (50%) : 0.000007595261 seconds
+🔹 95th Percentile  : 0.000121190706 seconds
 
 ===== CAD Metrics for config_0.4_0.4 =====
-Total valid CAD records : 73001
-📌 Average CAD      : 0.000020423153 seconds
-✅ Minimum CAD      : 0.000000000077 seconds
-🚨 Maximum CAD      : 0.000442464744 seconds
-🔸 Median CAD (50%) : 0.000007527477 seconds
-🔹 95th Percentile  : 0.000143063581 seconds
+Total valid CAD records : 78227
+📌 Average CAD      : 0.000022141024 seconds
+✅ Minimum CAD      : 0.000000000039 seconds
+🚨 Maximum CAD      : 0.000351049889 seconds
+🔸 Median CAD (50%) : 0.000007705010 seconds
+🔹 95th Percentile  : 0.000132271597 seconds
 
 ===== CAD Metrics for config_0.5_0.5 =====
-Total valid CAD records : 73001
-📌 Average CAD      : 0.000020423153 seconds
-✅ Minimum CAD      : 0.000000000077 seconds
-🚨 Maximum CAD      : 0.000442464744 seconds
-🔸 Median CAD (50%) : 0.000007527477 seconds
-🔹 95th Percentile  : 0.000143063581 seconds
+Total valid CAD records : 78227
+📌 Average CAD      : 0.000022141024 seconds
+✅ Minimum CAD      : 0.000000000039 seconds
+🚨 Maximum CAD      : 0.000351049889 seconds
+🔸 Median CAD (50%) : 0.000007705010 seconds
+🔹 95th Percentile  : 0.000132271597 seconds
 
 ===== CAD Metrics for config_0.75_0.75 =====
-Total valid CAD records : 73092
-📌 Average CAD      : 0.000017395607 seconds
-✅ Minimum CAD      : 0.000000000384 seconds
-🚨 Maximum CAD      : 0.000341216425 seconds
-🔸 Median CAD (50%) : 0.000007320209 seconds
-🔹 95th Percentile  : 0.000105744900 seconds
+Total valid CAD records : 78198
+📌 Average CAD      : 0.000014935703 seconds
+✅ Minimum CAD      : 0.000000000095 seconds
+🚨 Maximum CAD      : 0.000318871269 seconds
+🔸 Median CAD (50%) : 0.000007187105 seconds
+🔹 95th Percentile  : 0.000099446091 seconds
 
 ===== CAD Metrics for config_12.0_9.0 =====
-Total valid CAD records : 13904
-📌 Average CAD      : 0.000009849785 seconds
-✅ Minimum CAD      : 0.000000000410 seconds
-🚨 Maximum CAD      : 0.000154780180 seconds
-🔸 Median CAD (50%) : 0.000006855509 seconds
-🔹 95th Percentile  : 0.000012889129 seconds
+Total valid CAD records : 14332
+📌 Average CAD      : 0.000007171571 seconds
+✅ Minimum CAD      : 0.000000000163 seconds
+🚨 Maximum CAD      : 0.000118018483 seconds
+🔸 Median CAD (50%) : 0.000006497567 seconds
+🔹 95th Percentile  : 0.000012413226 seconds
 
 ===== CAD Metrics for config_1.0_0.5 =====
-Total valid CAD records : 73149
-📌 Average CAD      : 0.000016319224 seconds
-✅ Minimum CAD      : 0.000000000438 seconds
-🚨 Maximum CAD      : 0.000447537757 seconds
-🔸 Median CAD (50%) : 0.000007148521 seconds
-🔹 95th Percentile  : 0.000091894875 seconds
+Total valid CAD records : 79379
+📌 Average CAD      : 0.000023857634 seconds
+✅ Minimum CAD      : 0.000000000267 seconds
+🚨 Maximum CAD      : 0.000502885998 seconds
+🔸 Median CAD (50%) : 0.000007862072 seconds
+🔹 95th Percentile  : 0.000143547290 seconds
 
 ===== CAD Metrics for config_1.0_0.75 =====
-Total valid CAD records : 74315
-📌 Average CAD      : 0.000017729944 seconds
-✅ Minimum CAD      : 0.000000000301 seconds
-🚨 Maximum CAD      : 0.000475397697 seconds
-🔸 Median CAD (50%) : 0.000007237061 seconds
-🔹 95th Percentile  : 0.000103928960 seconds
+Total valid CAD records : 77573
+📌 Average CAD      : 0.000014257197 seconds
+✅ Minimum CAD      : 0.000000000111 seconds
+🚨 Maximum CAD      : 0.000200927218 seconds
+🔸 Median CAD (50%) : 0.000007237325 seconds
+🔹 95th Percentile  : 0.000088091250 seconds
 
 ===== CAD Metrics for config_1.0_1.0 =====
-Total valid CAD records : 72634
-📌 Average CAD      : 0.000020789781 seconds
-✅ Minimum CAD      : 0.000000000366 seconds
-🚨 Maximum CAD      : 0.000645687096 seconds
-🔸 Median CAD (50%) : 0.000007504124 seconds
-🔹 95th Percentile  : 0.000127343206 seconds
+Total valid CAD records : 78081
+📌 Average CAD      : 0.000014842213 seconds
+✅ Minimum CAD      : 0.000000000218 seconds
+🚨 Maximum CAD      : 0.000200970368 seconds
+🔸 Median CAD (50%) : 0.000007098876 seconds
+🔹 95th Percentile  : 0.000103944195 seconds
 
 ===== CAD Metrics for config_1.0_1.5 =====
-Total valid CAD records : 73123
-📌 Average CAD      : 0.000018906269 seconds
-✅ Minimum CAD      : 0.000000000585 seconds
-🚨 Maximum CAD      : 0.000418608660 seconds
-🔸 Median CAD (50%) : 0.000007427110 seconds
-🔹 95th Percentile  : 0.000119366913 seconds
+Total valid CAD records : 76851
+📌 Average CAD      : 0.000016971469 seconds
+✅ Minimum CAD      : 0.000000000017 seconds
+🚨 Maximum CAD      : 0.000503404293 seconds
+🔸 Median CAD (50%) : 0.000007145815 seconds
+🔹 95th Percentile  : 0.000109138266 seconds
 
 ===== CAD Metrics for config_1.0_2.0 =====
-Total valid CAD records : 67968
-📌 Average CAD      : 0.000016733168 seconds
-✅ Minimum CAD      : 0.000000000162 seconds
-🚨 Maximum CAD      : 0.000353441407 seconds
-🔸 Median CAD (50%) : 0.000007290116 seconds
-🔹 95th Percentile  : 0.000101592455 seconds
+Total valid CAD records : 75323
+📌 Average CAD      : 0.000015859861 seconds
+✅ Minimum CAD      : 0.000000000158 seconds
+🚨 Maximum CAD      : 0.000282016694 seconds
+🔸 Median CAD (50%) : 0.000007249131 seconds
+🔹 95th Percentile  : 0.000098823991 seconds
 
 ===== CAD Metrics for config_3.0_1.25 =====
-Total valid CAD records : 64490
-📌 Average CAD      : 0.000015736260 seconds
-✅ Minimum CAD      : 0.000000000061 seconds
-🚨 Maximum CAD      : 0.000403566689 seconds
-🔸 Median CAD (50%) : 0.000007185708 seconds
-🔹 95th Percentile  : 0.000083748572 seconds
+Total valid CAD records : 64023
+📌 Average CAD      : 0.000015991411 seconds
+✅ Minimum CAD      : 0.000000000012 seconds
+🚨 Maximum CAD      : 0.000195253456 seconds
+🔸 Median CAD (50%) : 0.000007055352 seconds
+🔹 95th Percentile  : 0.000126684979 seconds
 
 ===== CAD Metrics for config_3.0_4.0 =====
-Total valid CAD records : 41571
-📌 Average CAD      : 0.000024691015 seconds
-✅ Minimum CAD      : 0.000000001103 seconds
-🚨 Maximum CAD      : 0.000512977152 seconds
-🔸 Median CAD (50%) : 0.000007383983 seconds
-🔹 95th Percentile  : 0.000147587850 seconds
+Total valid CAD records : 41810
+📌 Average CAD      : 0.000012121004 seconds
+✅ Minimum CAD      : 0.000000000054 seconds
+🚨 Maximum CAD      : 0.000312435968 seconds
+🔸 Median CAD (50%) : 0.000006819438 seconds
+🔹 95th Percentile  : 0.000027906160 seconds
 
 ===== CAD Metrics for config_5.0_2.0 =====
-Total valid CAD records : 50067
-📌 Average CAD      : 0.000016357256 seconds
-✅ Minimum CAD      : 0.000000000756 seconds
-🚨 Maximum CAD      : 0.000360202672 seconds
-🔸 Median CAD (50%) : 0.000007285756 seconds
-🔹 95th Percentile  : 0.000099622997 seconds
+Total valid CAD records : 50221
+📌 Average CAD      : 0.000010588301 seconds
+✅ Minimum CAD      : 0.000000000053 seconds
+🚨 Maximum CAD      : 0.000200993522 seconds
+🔸 Median CAD (50%) : 0.000006646017 seconds
+🔹 95th Percentile  : 0.000012695935 seconds
 
 ===== CAD Metrics for config_5.0_9.0 =====
-Total valid CAD records : 34056
-📌 Average CAD      : 0.000007847680 seconds
-✅ Minimum CAD      : 0.000000000287 seconds
-🚨 Maximum CAD      : 0.000230095123 seconds
-🔸 Median CAD (50%) : 0.000006631158 seconds
-🔹 95th Percentile  : 0.000012638214 seconds
+Total valid CAD records : 22726
+📌 Average CAD      : 0.000007588249 seconds
+✅ Minimum CAD      : 0.000000001888 seconds
+🚨 Maximum CAD      : 0.000100912932 seconds
+🔸 Median CAD (50%) : 0.000006569177 seconds
+🔹 95th Percentile  : 0.000012612952 seconds
 
 ===== CAD Metrics for config_7.0_10.0 =====
-Total valid CAD records : 13904
-📌 Average CAD      : 0.000009849785 seconds
-✅ Minimum CAD      : 0.000000000410 seconds
-🚨 Maximum CAD      : 0.000154780180 seconds
-🔸 Median CAD (50%) : 0.000006855509 seconds
-🔹 95th Percentile  : 0.000012889129 seconds
+Total valid CAD records : 17747
+📌 Average CAD      : 0.000010404712 seconds
+✅ Minimum CAD      : 0.000000000250 seconds
+🚨 Maximum CAD      : 0.000171113639 seconds
+🔸 Median CAD (50%) : 0.000006701810 seconds
+🔹 95th Percentile  : 0.000012697745 seconds
 
 ===== CAD Metrics for config_7.0_3.0 =====
-Total valid CAD records : 34056
-📌 Average CAD      : 0.000007847680 seconds
-✅ Minimum CAD      : 0.000000000287 seconds
-🚨 Maximum CAD      : 0.000230095123 seconds
-🔸 Median CAD (50%) : 0.000006631158 seconds
-🔹 95th Percentile  : 0.000012638214 seconds
+Total valid CAD records : 34377
+📌 Average CAD      : 0.000010121959 seconds
+✅ Minimum CAD      : 0.000000000409 seconds
+🚨 Maximum CAD      : 0.000169758356 seconds
+🔸 Median CAD (50%) : 0.000006731082 seconds
+🔹 95th Percentile  : 0.000012830087 seconds
 
 ==== FINAL CAD SUMMARY ACROSS ALL CONFIGS ====
-config_0.3_0.3 → Avg: 0.000020423153, Min: 0.000000000077, Max: 0.000442464744, Median: 0.000007527477, 95th: 0.000143063581
-config_0.4_0.3 → Avg: 0.000020376883, Min: 0.000000000053, Max: 0.000499168181, Median: 0.000007458411, 95th: 0.000127635380
-config_0.4_0.4 → Avg: 0.000020423153, Min: 0.000000000077, Max: 0.000442464744, Median: 0.000007527477, 95th: 0.000143063581
-config_0.5_0.5 → Avg: 0.000020423153, Min: 0.000000000077, Max: 0.000442464744, Median: 0.000007527477, 95th: 0.000143063581
-config_0.75_0.75 → Avg: 0.000017395607, Min: 0.000000000384, Max: 0.000341216425, Median: 0.000007320209, 95th: 0.000105744900
-config_12.0_9.0 → Avg: 0.000009849785, Min: 0.000000000410, Max: 0.000154780180, Median: 0.000006855509, 95th: 0.000012889129
-config_1.0_0.5 → Avg: 0.000016319224, Min: 0.000000000438, Max: 0.000447537757, Median: 0.000007148521, 95th: 0.000091894875
-config_1.0_0.75 → Avg: 0.000017729944, Min: 0.000000000301, Max: 0.000475397697, Median: 0.000007237061, 95th: 0.000103928960
-config_1.0_1.0 → Avg: 0.000020789781, Min: 0.000000000366, Max: 0.000645687096, Median: 0.000007504124, 95th: 0.000127343206
-config_1.0_1.5 → Avg: 0.000018906269, Min: 0.000000000585, Max: 0.000418608660, Median: 0.000007427110, 95th: 0.000119366913
-config_1.0_2.0 → Avg: 0.000016733168, Min: 0.000000000162, Max: 0.000353441407, Median: 0.000007290116, 95th: 0.000101592455
-config_3.0_1.25 → Avg: 0.000015736260, Min: 0.000000000061, Max: 0.000403566689, Median: 0.000007185708, 95th: 0.000083748572
-config_3.0_4.0 → Avg: 0.000024691015, Min: 0.000000001103, Max: 0.000512977152, Median: 0.000007383983, 95th: 0.000147587850
-config_5.0_2.0 → Avg: 0.000016357256, Min: 0.000000000756, Max: 0.000360202672, Median: 0.000007285756, 95th: 0.000099622997
-config_5.0_9.0 → Avg: 0.000007847680, Min: 0.000000000287, Max: 0.000230095123, Median: 0.000006631158, 95th: 0.000012638214
-config_7.0_10.0 → Avg: 0.000009849785, Min: 0.000000000410, Max: 0.000154780180, Median: 0.000006855509, 95th: 0.000012889129
-config_7.0_3.0 → Avg: 0.000007847680, Min: 0.000000000287, Max: 0.000230095123, Median: 0.000006631158, 95th: 0.000012638214
+config_0.3_0.3 → Avg: 0.000022141024, Min: 0.000000000039, Max: 0.000351049889, Median: 0.000007705010, 95th: 0.000132271597
+config_0.4_0.3 → Avg: 0.000017826191, Min: 0.000000000017, Max: 0.000332460740, Median: 0.000007595261, 95th: 0.000121190706
+config_0.4_0.4 → Avg: 0.000022141024, Min: 0.000000000039, Max: 0.000351049889, Median: 0.000007705010, 95th: 0.000132271597
+config_0.5_0.5 → Avg: 0.000022141024, Min: 0.000000000039, Max: 0.000351049889, Median: 0.000007705010, 95th: 0.000132271597
+config_0.75_0.75 → Avg: 0.000014935703, Min: 0.000000000095, Max: 0.000318871269, Median: 0.000007187105, 95th: 0.000099446091
+config_12.0_9.0 → Avg: 0.000007171571, Min: 0.000000000163, Max: 0.000118018483, Median: 0.000006497567, 95th: 0.000012413226
+config_1.0_0.5 → Avg: 0.000023857634, Min: 0.000000000267, Max: 0.000502885998, Median: 0.000007862072, 95th: 0.000143547290
+config_1.0_0.75 → Avg: 0.000014257197, Min: 0.000000000111, Max: 0.000200927218, Median: 0.000007237325, 95th: 0.000088091250
+config_1.0_1.0 → Avg: 0.000014842213, Min: 0.000000000218, Max: 0.000200970368, Median: 0.000007098876, 95th: 0.000103944195
+config_1.0_1.5 → Avg: 0.000016971469, Min: 0.000000000017, Max: 0.000503404293, Median: 0.000007145815, 95th: 0.000109138266
+config_1.0_2.0 → Avg: 0.000015859861, Min: 0.000000000158, Max: 0.000282016694, Median: 0.000007249131, 95th: 0.000098823991
+config_3.0_1.25 → Avg: 0.000015991411, Min: 0.000000000012, Max: 0.000195253456, Median: 0.000007055352, 95th: 0.000126684979
+config_3.0_4.0 → Avg: 0.000012121004, Min: 0.000000000054, Max: 0.000312435968, Median: 0.000006819438, 95th: 0.000027906160
+config_5.0_2.0 → Avg: 0.000010588301, Min: 0.000000000053, Max: 0.000200993522, Median: 0.000006646017, 95th: 0.000012695935
+config_5.0_9.0 → Avg: 0.000007588249, Min: 0.000000001888, Max: 0.000100912932, Median: 0.000006569177, 95th: 0.000012612952
+config_7.0_10.0 → Avg: 0.000010404712, Min: 0.000000000250, Max: 0.000171113639, Median: 0.000006701810, 95th: 0.000012697745
+config_7.0_3.0 → Avg: 0.000010121959, Min: 0.000000000409, Max: 0.000169758356, Median: 0.000006731082, 95th: 0.000012830087
 
 ✅ All CAD metrics stored in:
 global_avg_cad_list, global_max_cad_list, global_min_cad_list, global_median_cad_list, global_95th_cad_list
@@ -828,27 +828,27 @@ config_7.0_3.0 → Density: 5.7143
 2.91429
 5.71429
 Density	SMRavg	Classification
-80.0	69.816	High Reliability (Case A)
-70.0	69.716	High Reliability (Case A)
-60.0	69.816	High Reliability (Case A)
-48.0	69.816	High Reliability (Case A)
-32.0	69.992	High Reliability (Case A)
-2.333333333333333	58.907	Low Reliability (Case C)
-36.0	69.026	High Reliability (Case A)
-27.999999999999996	69.262	High Reliability (Case A)
-24.0	69.483	High Reliability (Case A)
-20.0	70.190	High Reliability (Case A)
-18.0	71.348	High Reliability (Case A)
-13.6	64.953	Moderate Reliability (Case B)
-6.999999999999999	65.694	Moderate Reliability (Case B)
-8.399999999999999	68.395	High Reliability (Case A)
-3.7333333333333334	66.537	Moderate Reliability (Case B)
-2.914285714285714	58.907	Low Reliability (Case C)
-5.7142857142857135	66.537	Moderate Reliability (Case B)
+80.0	65.634	High Reliability (Case A)
+70.0	65.234	High Reliability (Case A)
+60.0	65.634	High Reliability (Case A)
+48.0	65.634	High Reliability (Case A)
+32.0	64.993	Moderate Reliability (Case B)
+2.333333333333333	58.280	Low Reliability (Case C)
+36.0	63.809	Moderate Reliability (Case B)
+27.999999999999996	64.533	Moderate Reliability (Case B)
+24.0	65.859	High Reliability (Case A)
+20.0	65.118	High Reliability (Case A)
+18.0	63.226	Moderate Reliability (Case B)
+13.6	65.522	High Reliability (Case A)
+6.999999999999999	62.942	Moderate Reliability (Case B)
+8.399999999999999	61.987	Moderate Reliability (Case B)
+3.7333333333333334	61.903	Moderate Reliability (Case B)
+2.914285714285714	59.669	Low Reliability (Case C)
+5.7142857142857135	62.405	Moderate Reliability (Case B)
 
-High Reliability (Case A): [(80.0, np.float64(69.81575490375545)), (70.0, np.float64(69.71648671844099)), (60.0, np.float64(69.81575490375545)), (48.0, np.float64(69.81575490375545)), (32.0, np.float64(69.99247509870509)), (36.0, np.float64(69.02584257393501)), (27.999999999999996, np.float64(69.26152362243997)), (24.0, np.float64(69.48268950145672)), (20.0, np.float64(70.19010593388892)), (18.0, np.float64(71.34760917388115)), (8.399999999999999, np.float64(68.39478781902204))]
-Moderate Reliability (Case B): [(13.6, np.float64(64.95306680240779)), (6.999999999999999, np.float64(65.69432476188771)), (3.7333333333333334, np.float64(66.53749314551015)), (5.7142857142857135, np.float64(66.53749314551015))]
-Low Reliability (Case C): [(2.333333333333333, np.float64(58.907277725456254)), (2.914285714285714, np.float64(58.907277725456254))]
+High Reliability (Case A): [(80.0, np.float64(65.63358508435336)), (70.0, np.float64(65.2338600833549)), (60.0, np.float64(65.63358508435336)), (48.0, np.float64(65.63358508435336)), (24.0, np.float64(65.85948382482324)), (20.0, np.float64(65.11765479290696)), (13.6, np.float64(65.52230691318881))]
+Moderate Reliability (Case B): [(32.0, np.float64(64.99277939556903)), (36.0, np.float64(63.80890920127219)), (27.999999999999996, np.float64(64.53279450710417)), (18.0, np.float64(63.22600755754356)), (6.999999999999999, np.float64(62.94165760516144)), (8.399999999999999, np.float64(61.986569955547466)), (3.7333333333333334, np.float64(61.90316746968543)), (5.7142857142857135, np.float64(62.40474825169852))]
+Low Reliability (Case C): [(2.333333333333333, np.float64(58.28002231720694)), (2.914285714285714, np.float64(59.66898637504154))]
 
 ✅ All classification lists stored in:
 high_reliability , moderate_reliability , low_reliability
